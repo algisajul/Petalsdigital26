@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metaphorical Cards "Petals of You" — a tool for self-reflection | Petals.digital</title>
+<meta name="description" content="MAK Cards "Petals of You" — a tool for self-reflection that helps see your real state through image and questions. 31 state cards. For yourself and for working with clients. Author Algisa Bloom.">
+<meta name="keywords" content="metaphorical cards, MAK cards, psychological cards, self-reflection tools, cards for psychologist, art therapy, petals of you, petals digital">
+<link rel="alternate" hreflang="uk" href="/index.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Petals.digital","url":"https://petals.digital","contactPoint":{"@type":"ContactPoint","email":"petalsdigitalcontact@gmail.com"}},{"@type":"Product","name":"Metaphorical Cards "Petals of You"","description":"31 art-metaphorical cards for working with states, emotions and internal processes","brand":{"@type":"Brand","name":"Petals.digital"},"offers":[{"@type":"Offer","price":"890","priceCurrency":"UAH","name":"PDF version"},{"@type":"Offer","price":"1200","priceCurrency":"UAH","name":"Physical deck"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Who are the MAK Cards "Petals of You" suitable for?","acceptedAnswer":{"@type":"Answer","text":"For self-reflection and for psychologists, coaches, art therapists in working with clients."}},{"@type":"Question","name":"What is the first result from the cards?","acceptedAnswer":{"@type":"Answer","text":"In 5 minutes, a person gets the first clear understanding of their state through image and precise questions."}}]}]}
+</script>
+<style>
+:root{--cream:#F5F0E8;--warm:#FAF8F4;--sand:#E8DFD0;--clay:#B8956E;--earth:#9CA8A0;--deep:#2C2218;--mist:#CFC6B8;--blush:#D4B8A8;--sage:#6E7F72;--ink:#1A1410;--accent:#B86F52;}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--ink);overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.3rem 4rem;display:flex;justify-content:space-between;align-items:center;background:rgba(250,248,244,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(196,168,130,.18)}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:400;letter-spacing:.12em;color:var(--earth);text-decoration:none}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{  font-size:.85rem;
+  color:var(--earth);
+  opacity:.85;
+  transition:opacity 0.3s, color 0.3s;}
+.nav-links a:hover{opacity:1; color:var(--deep);}
+.btn{padding:.6rem 1.2rem;font-family:'DM Sans',sans-serif;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;border:none;cursor:pointer;text-decoration:none;display:inline-block;transition:all .3s}
+.btn-p{background:#2C2218;  color:#fff;  box-shadow:0 6px 20px rgba(0,0,0,0.15);}.btn-p:hover{
+  background:#B8956E;
+  transform:translateY(-2px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);}
+.btn-g{background:transparent;color:var(--earth);border:1px solid var(--clay)}.btn-g:hover{background:var(--sand)}
+.btn-c{background:var(--clay);color:var(--cream)}.btn-c:hover{background:var(--earth)}
+.micro{font-size:.7rem;color:var(--deep);opacity:.4;display:block;margin-top:.75rem;letter-spacing:.03em}
+
+/* HERO */
+.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;padding-top:80px;overflow:hidden}
+.hero-l{padding:6rem 3.5rem 5rem 5rem;display:flex;flex-direction:column;justify-content:center}
+.eyebrow{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--clay);margin-bottom:1.8rem;opacity:0;animation:fu .8s .2s forwards}
+h1.hero-t{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,3.8vw,3.6rem);font-weight:500;line-height:1.15;color:var(--deep);margin-bottom:1.8rem;opacity:0;animation:fu .9s .35s forwards}
+.hero-sub{font-size:1rem;line-height:1.75;color:var(--deep);opacity:0;max-width:440px;margin-bottom:3rem;font-weight:500;animation:fu .9s .5s forwards}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap;opacity:0;animation:fu .9s .65s forwards}
+.hero-r{position:relative;overflow:hidden}
+.hero-r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;opacity:0;animation:fi 1.2s .8s forwards}
+.hero-r::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,rgba(250,248,244,.25) 0%,transparent 30%)}
+
+/* QUOTE */
+.qband{background:var(--deep);padding:4rem 5rem;display:flex;align-items:center;gap:4rem}
+.qlarge{font-family:'Cormorant Garamond',serif;font-size:clamp(1.7rem,2.8vw,2.5rem);font-weight:500;font-style:italic;color:var(--cream);line-height:1.4;flex:1;max-width:680px}
+.qdiv{width:1px;height:80px;background:var(--clay);flex-shrink:0}
+.qsmall{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);flex-shrink:0;max-width:180px;line-height:1.9}
+
+/* STATS */
+.stats{background:var(--cream);padding:3rem 5rem;display:flex;align-items:center;gap:5rem;border-top:1px solid var(--sand);flex-wrap:wrap}
+.stat{display:flex;flex-direction:column;align-items:center;text-align:center;gap:.4rem;flex:1;min-width:100px}
+.stat-n{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:500;color:var(--earth);line-height:1}
+.stat-l{font-size:.75rem;letter-spacing:.1em;color:var(--deep);opacity:.55;text-transform:uppercase}
+.sdiv{width:1px;height:50px;background:var(--sand)}
+
+/* SECTIONS */
+.sec{padding:6rem 5rem}.sec-bg{background:var(--cream)}
+.slabel{font-size:.67rem;letter-spacing:.26em;text-transform:uppercase;color:var(--clay);margin-bottom:2.5rem}
+.stitle{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,3vw,2.9rem);font-weight:300;line-height:1.25;color:var(--deep)}
+.stitle em{font-style:italic;color:var(--earth)}
+.body{font-size:.95rem;line-height:1.88;color:var(--deep);opacity:.63;font-weight:300}
+
+/* WHAT */
+.wgrid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+.pillars{display:flex;flex-direction:column;gap:1.2rem;margin-top:2rem}
+.pillar{display:flex;gap:1.1rem;align-items:flex-start}
+.pdot{width:5px;height:5px;border-radius:50%;background:var(--clay);margin-top:.55rem;flex-shrink:0}
+.ptext{font-size:.93rem;color:var(--deep);line-height:1.65;font-weight:300}
+
+/* 5 MIN */
+.fivemin{background:var(--earth);padding:4rem 5rem;display:flex;align-items:center;gap:5rem}
+.fivemin-n{font-family:'Cormorant Garamond',serif;font-size:5rem;font-weight:300;color:rgba(250,248,244,.18);line-height:1;flex-shrink:0}
+.fivemin-t{font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:300;color:var(--cream);margin-bottom:.9rem;line-height:1.3}
+.fivemin-t em{font-style:italic}.fivemin-b{font-size:.9rem;line-height:1.8;color:rgba(250,248,244,.6);font-weight:300;max-width:500px}
+
+/* AUDIENCE */
+.agrid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:3.5rem}
+.acard{background:var(--warm);padding:2.5rem 1.8rem;border-top:2px solid transparent;transition:border-color .3s,background .3s}
+.acard:hover{border-color:var(--clay);background:#fff}
+.aicon{font-size:1.4rem;margin-bottom:1rem;opacity:.45}
+.atitle{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:400;color:var(--deep);margin-bottom:.65rem;line-height:1.3}
+.adesc{font-size:.82rem;line-height:1.7;color:var(--deep);opacity: .75;;font-weight:300}
+
+/* HOW */
+.hgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;margin-top:3.5rem;position:relative}
+.hgrid::before{content:'';position:absolute;top:1.8rem;left:1.5rem;right:1.5rem;height:1px;background:var(--sand)}
+.hstep{padding-right:1.5rem}
+.hnum{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;color:var(--sand);line-height:1;margin-bottom:1.4rem}
+.htitle{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:500;color:var(--deep);margin-bottom:.65rem}
+.hdesc{font-size:.95rem;line-height:1.75;color:var(--deep);opacity:.75;font-weight:300}
+
+/* DIFF */
+.diff-sec{background:var(--deep);padding:6rem 5rem;position:relative;overflow:hidden}
+.diff-sec::before{content:'';position:absolute;top:-200px;right:-200px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(196,168,130,.07) 0%,transparent 70%)}
+.diff-lead{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,3rem);font-weight:300;color:var(--cream);max-width:680px;line-height:1.3;margin-bottom:4.5rem}
+.diff-lead em{font-style:italic;color:var(--clay)}
+.dtable{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+.dhead{font-size:.67rem;letter-spacing:.22em;text-transform:uppercase;padding:1.1rem 1.8rem;background:rgba(255,255,255,.04)}
+.dhead.oth{color:rgba(250,248,244,.3)}.dhead.pet{color:var(--clay)}
+.dcell{padding:1.3rem 1.8rem;font-size:.87rem;line-height:1.6;border-top:1px solid rgba(255,255,255,.05);font-weight:300}
+.dcell.oth{color:rgba(250,248,244,.37);background:rgba(255,255,255,.02)}
+.dcell.pet{color:var(--cream);background:rgba(196,168,130,.07)}
+
+/* PRODUCTS */
+.pgrid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:auto auto;gap:2px}
+.pcard{background:var(--cream);padding:2.5rem;display:flex;flex-direction:column;justify-content:space-between;min-height:255px;transition:background .3s}
+.pcard:hover{background:var(--sand)}
+.pcard.feat{background:var(--earth);grid-row:1/3}.pcard.feat:hover{background:var(--deep)}
+.pcard.journals{background:var(--sage);color:var(--cream);border:1px solid rgba(156,168,160,.25);}
+.pcard.journals .ptag{color:var(--cream);border-color:rgba(250,248,244,.4);}
+.pcard.journals .pname{color:var(--cream)}
+.pcard.journals .pdesc{color:rgba(250,248,244,.9)}
+.pcard.journals .plink{color:var(--cream)}
+.pcard.journals:hover{background:rgba(118,129,114,.9)}
+.pcard.workbooks{background:var(--sand);color:var(--deep);border:1px solid var(--clay);}
+.pcard.workbooks .ptag{color:var(--deep);border-color:var(--clay)}
+.pcard.workbooks .pname{color:var(--deep)}
+.pcard.workbooks .pdesc{color:var(--deep);opacity:.8}
+.pcard.workbooks .plink{color:var(--earth)}
+.pcard.book{background:var(--cream);color:var(--deep);border:1px solid var(--sand);}
+.pcard.book .ptag{color:var(--deep);border-color:var(--clay)}
+.pcard.book .pname{color:var(--deep)}
+.pcard.book .pdesc{color:var(--deep);opacity:.85}
+.pcard.book .plink{color:var(--earth)}
+.pcard.feat .plink{color:var(--cream)}.pcard:not(.feat) .plink{color:var(--earth)}
+.ptag{display:inline-block;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;padding:.3rem .75rem;border:1px solid;margin-bottom:1.2rem;width:fit-content}
+.pcard.feat .ptag{color:rgba(250,248,244,.42);border-color:rgba(250,248,244,.2)}
+.pcard:not(.feat) .ptag{color:var(--earth);border-color:var(--clay)}
+.pname{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;line-height:1.3;margin-bottom:.75rem}
+.pcard.feat .pname{color:var(--cream);font-size:1.9rem}
+.pcard:not(.feat) .pname{color:var(--deep)}
+.pdesc{font-size:.95rem;line-height:1.7;font-weight:300;margin-bottom:1rem}
+.pcard.feat .pdesc{color:rgba(250,248,244,.65)}.pcard:not(.feat) .pdesc{color:var(--deep);opacity:.55}
+.pprice{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--cream);margin-bottom:.3rem}
+.pprice-alt{font-size:.95rem;color:rgba(250,248,244,.45);margin-bottom:1rem}
+.plink{text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;font-size:.77rem;letter-spacing:.1em;text-transform:uppercase;transition:gap .3s;margin-top:.8rem}
+.pcard.feat .plink{color:var(--cream)}.pcard:not(.feat) .plink{color:var(--earth)}.plink:hover{gap:1rem}
+
+/* WHERE */
+.wgr3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;margin-top:3rem}
+.wcard{background:var(--warm);padding:2.5rem 2rem;border-bottom:3px solid transparent;transition:border-color .3s}
+.wcard:hover{border-color:var(--clay)}
+.wtype{font-size:.67rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.8rem}
+.wtitle{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--deep);margin-bottom:.5rem}
+.wprice{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--earth);margin-bottom:.8rem}
+.wdesc{font-size:.95rem;line-height:1.65;color:var(--deep);opacity:.75;margin-bottom:1.5rem;font-weight:300}
+
+/* FREE GUIDE */
+.fguide{background:var(--deep);padding:5rem;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.fbadge{display:inline-block;font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--clay);border:1px solid rgba(196,168,130,.4);padding:.33rem .9rem;margin-bottom:1.4rem}
+.ftitle{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,2.8vw,2.8rem);font-weight:300;color:var(--cream);line-height:1.3;margin-bottom:1.1rem}
+.ftitle em{font-style:italic;color:var(--clay)}
+.fdesc{font-size:.9rem;line-height:1.85;color:rgba(250,248,244,.58);font-weight:300;margin-bottom:2.5rem}
+.fimg{aspect-ratio:4/3;overflow:hidden}
+.fimg img{width:100%;height:100%;object-fit:cover;filter:brightness(.82)}
+
+/* CARDS */
+.cshowcase{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;margin-top:3.5rem}
+.sc{aspect-ratio:3/4;position:relative;overflow:hidden;cursor:pointer;transition:transform .4s}
+.sc:hover{transform:translateY(-8px) scale(1.02)}
+.sc img{width:100%;height:100%;object-fit:cover}
+.scov{position:absolute;inset:0;background:linear-gradient(to top,rgba(28,18,10,.7) 0%,transparent 50%);display:flex;align-items:flex-end;padding:1.1rem}
+.scname{font-family:'Cormorant Garamond',serif;font-size:.75rem;color:rgba(250,248,244,.85);line-height:1.4;font-style:italic}
+
+.neutral-banner{background:var(--warm);padding:1.5rem 0;text-align:center}
+.neutral-banner img{width:100%;max-height:320px;object-fit:cover;border-radius:12px;opacity:.95}
+
+/* поліпшений розмір відгуків */
+.rgrid .rcard img{height:220px;object-fit:cover;}
+
+.pcard.app{background:var(--mist);color:var(--deep);border:1px solid rgba(156,168,160,.45);opacity:1}
+.pcard.app .ptag{color:var(--deep);border-color:rgba(156,168,160,.6)}
+.pcard.app .pname{color:var(--deep)}
+.pcard.app .pdesc{color:var(--deep);opacity:.85}
+
+/* AUTHOR */
+.authgrid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.authimg{aspect-ratio:4/5;overflow:hidden}
+.authimg img{width:100%;height:100%;object-fit:cover;object-position:top;filter:grayscale(12%)}
+.authtitle{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,2.8vw,2.6rem);font-weight:300;line-height:1.3;color:var(--deep);margin-bottom:1.8rem}
+.authtitle em{font-style:italic;color:var(--earth)}
+.authnote{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--clay);border-left:2px solid var(--clay);padding-left:1.5rem;line-height:1.6;margin-top:2rem}
+
+/* REVIEWS */
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:3.5rem}
+.rcard{background:var(--warm);overflow:hidden}
+.rcard img{width:100%;display:block;object-fit:cover}
+
+/* LIBRARY */
+.lgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:3.5rem}
+.lcard{background:var(--cream);padding:2rem 1.8rem;border-top:2px solid transparent;transition:border-color .3s;cursor:pointer}
+.lcard:hover{border-color:var(--clay)}
+.ltag{font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.75rem}
+.ltitle{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--deep);margin-bottom:.55rem;line-height:1.3}
+.ldesc{font-size:.81rem;line-height:1.65;color:var(--deep);opacity:.75;font-weight:300}
+.lsoon{display:inline-block;margin-top:.8rem;font-size:.63rem;letter-spacing:.15em;text-transform:uppercase;color:var(--mist)}
+
+/* SEO */
+.seoblock{padding:4rem 5rem;background:var(--sand)}
+.seotitle{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:400;color:var(--deep);margin-bottom:1.1rem}
+.seotext{font-size:.84rem;line-height:1.9;color:var(--deep);opacity:.58;font-weight:300;max-width:900px}
+.seotext p{margin-bottom:.8rem}
+
+/* CTA FINAL */
+.cta-fin{padding:8rem 5rem;text-align:center;background:var(--warm);position:relative;overflow:hidden}
+.cta-fin::before{content:'Petals';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Cormorant Garamond',serif;font-size:18vw;font-weight:300;color:var(--sand);white-space:nowrap;pointer-events:none;opacity:.5}
+.cta-con{position:relative;z-index:2}
+.cta-ey{font-size:.67rem;letter-spacing:.26em;text-transform:uppercase;color:var(--clay);margin-bottom:1.8rem}
+.cta-t{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.8rem);font-weight:300;color:var(--deep);line-height:1.2;max-width:700px;margin:0 auto 1.3rem}
+.cta-t em{font-style:italic;color:var(--earth)}
+.cta-s{font-size:.92rem;color:var(--deep);opacity:.48;margin-bottom:3rem;font-weight:300;max-width:480px;margin-left:auto;margin-right:auto}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+
+/* STICKY */
+.sticky{position:fixed;bottom:2rem;right:2rem;z-index:200;background:var(--earth);color:var(--cream);font-family:'DM Sans',sans-serif;font-size:.77rem;letter-spacing:.08em;text-transform:uppercase;padding:1rem 1.8rem;text-decoration:none;box-shadow:0 8px 32px rgba(44,34,24,.28);opacity:0;pointer-events:none;transition:opacity .4s,background .3s,transform .2s}
+.sticky.vis{opacity:1;pointer-events:auto}.sticky:hover{background:var(--deep);transform:translateY(-2px)}
+
+/* FOOTER */
+footer{background:var(--deep);padding:2.5rem 5rem;display:flex;flex-direction:column;align-items:center;text-align:center;gap:.8rem}
+.flogo{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--cream);opacity:.75;letter-spacing:.1em}
+.fcopy{font-size:.71rem;color:var(--cream);opacity:.27;letter-spacing:.07em;order:2;margin-top:.3rem}
+.flinks{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap}
+.flinks a{font-size:.71rem;letter-spacing:.1em;text-transform:uppercase;color:var(--cream);opacity:.36;text-decoration:none;transition:opacity .3s}
+.flinks a:hover{opacity:.8}
+
+/* ANIM */
+@keyframes fu{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fi{from{opacity:0}to{opacity:1}}
+.rev{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}.rev.vis{opacity:1;transform:translateY(0)}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  nav{padding:1.2rem 2.5rem}
+  .hero{grid-template-columns:1fr}.hero-r{display:none}
+  .hero-l{padding:6rem 2.5rem 4rem}
+  .sec,.sec-bg,.diff-sec,.fguide,.fivemin,.seoblock,.cta-fin{padding:4rem 2.5rem}
+  .qband,.stats{padding:3rem 2.5rem}
+  .agrid{grid-template-columns:repeat(2,1fr)}
+  .hgrid{grid-template-columns:repeat(2,1fr);gap:2.5rem}
+  .dtable{grid-template-columns:1fr}.dhead.oth,.dcell.oth{display:none}
+  .pgrid{grid-template-columns:1fr 1fr}.pcard.feat{grid-column:1/3;grid-row:auto}
+  .cshowcase{grid-template-columns:repeat(3,1fr)}
+  .authgrid{grid-template-columns:1fr}
+  .fguide{grid-template-columns:1fr;gap:2rem}
+  .rgrid{grid-template-columns:1fr}
+  .lgrid{grid-template-columns:repeat(2,1fr)}
+  .wgr3{grid-template-columns:1fr 1fr}
+  .qband{flex-direction:column;gap:2rem}
+  .fivemin{flex-direction:column;gap:1.5rem}
+  footer{flex-direction:column;gap:1.5rem;text-align:center;padding:2rem 2.5rem}
+  .wgrid{grid-template-columns:1fr;gap:2rem}
+}
+@media(max-width:640px){
+  .nav-links{display:none}
+  .agrid,.hgrid,.pgrid,.lgrid,.wgr3{grid-template-columns:1fr}
+  .pcard.feat{grid-column:auto}
+  .cshowcase{grid-template-columns:repeat(2,1fr)}
+  .cta-fin::before{font-size:28vw}
+  .sticky{bottom:1rem;right:1rem;padding:.85rem 1.4rem}
+}
+</style>
+</head>
+<body>
+
+<a href="https://www.liqpay.ua/uk/checkout/card/checkout_1774720953467252_15570594_s8skQkZPZLNuGuQBkGUv" target="_blank" class="sticky" id="sc">Get access →</a>
+
+<nav>
+  <a href="#" class="logo">Petals.digital</a>
+  <ul class="nav-links">
+    <li><a href="#what">About the tools</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#author">Author</a></li>
+    <li><a href="#library">Library</a></li>
+    <li><a href="#footer" aria-label="Contact - link to footer with Telegram and Instagram">Contact</a></li>
+  </ul>
+  <a href="https://www.liqpay.ua/uk/checkout/card/checkout_1774720953467252_15570594_s8skQkZPZLNuGuQBkGUv" target="_blank" class="btn btn-p">Choose a tool for yourself</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-l">
+    <p class="eyebrow">Petals.digital · Yavtushenko Yulia · Metaphorical Cards</p>
+    <h1 class="hero-t">MAK Cards "Petals of You" — a tool that <em>helps understand your state in 5 minutes — without a psychologist</em></h1>
+    <p class="hero-sub">Metaphorical cards and self-reflection tools that give the first point of clarity already in a few minutes</p>
+    <div class="hero-cta">
+      <a href="https://www.liqpay.ua/uk/checkout/card/checkout_1774720953467252_15570594_s8skQkZPZLNuGuQBkGUv" target="_blank" class="btn btn-p">Get access</a>
+      <a href="#what" class="btn btn-g">See how it works</a>
+    </div>
+    <span class="micro">Access immediately after purchase · Works for yourself and in working with clients</span>
+  </div>
+  <div class="hero-r">
+    <img src="cards.png" alt="Metaphorical Cards Petals of You — psychological cards for self-reflection" loading="lazy">
+  </div>
+</section>
+
+<!-- WHAT -->
+<section class="sec" id="what">
+  <p class="slabel rev">What is it</p>
+  <div class="wgrid">
+    <div class="rev">
+      <h2 class="stitle">Not therapy. Not advice.<br><em>A way to see your state</em> without distortions.</h2>
+    </div>
+    <div class="rev">
+      <p class="body" style="margin-bottom:2rem">MAK Cards "Petals of You" — a self-reflection tool that helps see your real state through image and precise questions without imposed interpretations. Not just cards, but a way to see what is really happening to you.</p>
+      <div class="pillars">
+        <div class="pillar"><div class="pdot"></div><p class="ptext">Shows the state without explanations — one image says more than an hour of conversation</p></div>
+        <div class="pillar"><div class="pdot"></div><p class="ptext">Launches internal dialogue through image, questions and bodily reaction</p></div>
+        <div class="pillar"><div class="pdot"></div><p class="ptext">Gives the first accurate understanding — without "everything will be fine" and template interpretations</p></div>
+        <div class="pillar"><div class="pdot"></div><p class="ptext">Returns to the real state — not to the ideal version, but to the living one</p></div>
+      </div>
+      <div style="margin-top:2.5rem">
+        <a href="https://www.liqpay.ua/uk/checkout/card/checkout_1774720953467252_15570594_s8skQkZPZLNuGuQBkGUv" target="_blank" class="btn btn-p">Try the cards</a>
+        <span class="micro">Access immediately after purchase</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats rev">
+  <div class="stat"><span class="stat-n">31</span><span class="stat-l">state cards</span></div>
+  <div class="sdiv"></div>
+  <div class="stat"><span class="stat-n">5 min</span><span class="stat-l">first effect</span></div>
+  <div class="sdiv"></div>
+  <div class="stat"><span class="stat-n">2</span><span class="stat-l">formats</span></div>
+  <div class="sdiv"></div>
+  <div class="stat"><span class="stat-n">2in1</span><span class="stat-l">for yourself and practice</span></div>
+</div>
+
+<!-- 5 MIN -->
+<div class="fivemin rev">
+  <div class="fivemin-n">5'</div>
+  <div>
+    <h3 class="fivemin-t">First result <em>in 5 minutes</em></h3>
+    <p class="fivemin-b">You look at the image — a reaction appears, often unexpected. Through it, the state opens. In 5 minutes, you get the first clear understanding. For home, for a session, for a quiet evening with yourself.</p>
+  </div>
+</div>
+
+<!-- FOR WHOM -->
+<section class="sec sec-bg" id="forwho">
+  <p class="slabel rev">For whom</p>
+  <h2 class="stitle rev">Psychological cards that <em>suit professional psychologists and self-work at the same time</em></h2>
+  <div class="agrid">
+    <div class="acard rev"><div class="aicon">○</div><h3 class="atitle">You feel overwhelmed — and can't explain why</h3><p class="adesc">There is only fatigue, tension or emptiness. Without words. The cards give the first point of clarity.</p></div>
+    <div class="acard rev"><div class="aicon">○</div><h3 class="atitle">You think a lot, but there is no clarity</h3><p class="adesc">Thoughts are circling. Analysis is there — answers are not. The image opens what you can't reach with words.</p></div>
+    <div class="acard rev"><div class="aicon">○</div><h3 class="atitle">Psychologist, coach, art therapist</h3><p class="adesc">31 intervention scenarios + license for practitioners. Ready tool without preparation.</p></div>
+    <div class="acard rev"><div class="aicon">○</div><h3 class="atitle">You want a short practice with yourself</h3><p class="adesc">Three minutes and one image — and already clearer. Daily or when needed.</p></div>
+  </div>
+  <div style="margin-top:2.5rem" class="rev">
+    <a href="https://www.liqpay.ua/uk/checkout/card/checkout_1774720953467252_15570594_s8skQkZPZLNuGuQBkGUv" target="_blank" class="btn btn-p">Choose a tool for yourself</a>
+    <span class="micro">Access immediately after purchase · Works for yourself and in working with clients</span>
+  </div>
+</section>
+
+<!-- HOW -->
+<section class="sec" id="how">
+  <p class="slabel rev">How it works</p>
+  <h2 class="stitle rev">Self-reflection tools that <em>give clarity through image</em></h2>
+  <div class="hgrid">
+    <div class="hstep rev"><div class="hnum">01</div><h3 class="htitle">You encounter the image</h3><p class="hdesc">Without instructions. Just the image and a few seconds of silence.</p></div>
+    <div class="hstep rev"><div class="hnum">02</div><h3 class="htitle">A reaction appears</h3><p class="hdesc">Bodily, emotional or the first thought that came. That's the important one.</p></div>
+    <div class="hstep rev"><div class="hnum">03</div><h3 class="htitle">The state becomes visible</h3><p class="hdesc">Not explained — but seen. Without the filter "how to answer correctly".</p></div>
+    <div class="hstep rev"><div class="hnum">04</div><h3 class="htitle">A point appears</h3><p class="hdesc">Specific. Real. With which you can already work independently or with a specialist.</p></div>
+  </div>
+  <div style="margin-top:3rem" class="rev">
+    <a href="https://www.liqpay.ua/uk/checkout/card/checkout_1774720953467252_15570594_s8skQkZPZLNuGuQBkGUv" target="_blank" class="btn btn-p">Try the cards</a>
+    <span class="micro">Access immediately after purchase</span>
+  </div>
+</section>
+
+<!-- DIFFERENCE -->
+<section class="diff-sec">
+  <p class="slabel rev" style="color:var(--clay)">What makes it different</p>
+  <h2 class="diff-lead rev">Doesn't soothe. <em>Gives clarity.</em><br>Because real support is not "everything will be fine".</h2>
+  <div class="dtable rev">
+    <div class="dhead oth">Other MAK cards</div><div class="dhead pet">"Petals of You"</div>
+    <div class="dcell oth">A set of images without system</div><div class="dcell pet">31 cards + scenarios + guide + license for practitioners</div>
+    <div class="dcell oth">Either for yourself or for a practitioner</div><div class="dcell pet">Two full formats in one product</div>
+    <div class="dcell oth">Ready interpretations — "this card means..."</div><div class="dcell pet">No ready meanings. Only ecological questions</div>
+    <div class="dcell oth">Weak aesthetics or superficial approach</div><div class="dcell pet">Original non-traditional metaphors, psychological accuracy</div>
+    <div class="dcell oth">No copyright protection</div><div class="dcell pet">License agreement for practitioners. Everything is legal and transparent</div>
+  </div>
+</section>
+
+<!-- CARDS -->
+<section class="sec" id="cards">
+  <p class="slabel rev">Card examples</p>
+  <h2 class="stitle rev">"Petals of You" — <em>31 images</em> for working with state</h2>
+  <div class="cshowcase">
+    <div class="sc rev"><img src="cards1.png" alt="Metaphorical cards for self-reflection" loading="lazy" style="object-position:0% 0%"><div class="scov"><span class="scname">When support became temporary</span></div></div>
+    <div class="sc rev"><img src="cards2.png" alt="Psychological cards of state" loading="lazy" style="object-position:100% 0%"><div class="scov"><span class="scname">Let go of resistance</span></div></div>
+    <div class="sc rev"><img src="cards3.png" alt="MAK cards for working with emotions" loading="lazy" style="object-position:50% 50%"><div class="scov"><span class="scname">Protection</span></div></div>
+    <div class="sc rev"><img src="cards4.png" alt="MAK cards for psychologist" loading="lazy" style="object-position:0% 100%"><div class="scov"><span class="scname">Thank you to myself for staying</span></div></div>
+    <div class="sc rev"><img src="cards5.png" alt="Metaphorical psychological cards" loading="lazy" style="object-position:100% 100%"><div class="scov"><span class="scname">I am already different</span></div></div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="sec" id="products">
+  <p class="slabel rev">Tools</p>
+  <h2 class="stitle rev" style="margin-bottom:3.5rem">State working system.<br>Choose your format.</h2>
+  <div class="pgrid">
+    <div class="pcard feat rev">
+      <div>
+        <span class="ptag">Flagship · Already available</span>
+        <h3 class="pname">Metaphorical Cards<br>"Petals of You"</h3>
+        <p class="pdesc">31 state cards + work scenarios + integration guide. This is not just a deck — it's a ready tool. For psychologists and self-work. No ready interpretations.</p>
+        <p class="pprice">890 (UAH) — less than 1 psychologist session</p>
+        <p class="pprice-alt">PDF · or 1200 UAH physical deck</p>
+      </div>
+      <div>
+        <a href="https://www.liqpay.ua/uk/checkout/card/checkout_1774720953467252_15570594_s8skQkZPZLNuGuQBkGUv" target="_blank" class="plink">Try the cards →</a>
+        <span class="micro" style="color:rgba(250,248,244,.35)">Access immediately after purchase</span>
+      </div>
+    </div>
+    <div class="pcard rev workbooks">
+      <div><span class="ptag">Available</span><h3 class="pname">Workbooks</h3><p class="pdesc">Structured work with state through questions — without water and template advice.</p></div>
+      <a href="https://www.etsy.com/shop/Petalsdigital?dd_referrer=" target="_blank" class="plink">Etsy / Gumroad →</a>
+    </div>
+    <div class="pcard rev journals">
+      <div><span class="ptag">Available</span><h3 class="pname">Journals</h3><p class="pdesc">Soft format of daily self-reflection for stabilization and returning to oneself.</p></div>
+      <a href="https://www.etsy.com/shop/Petalsdigital?dd_referrer=" target="_blank" class="plink">Etsy / Gumroad →</a>
+    </div>
+    <div class="pcard rev book">
+      <div><span class="ptag" style="color:rgba(44,34,24,.55);border-color:rgba(44,34,24,.35)">Soon</span><h3 class="pname" style="color:var(--deep)">"Petals of You" Book</h3><p class="pdesc" style="color:var(--deep);opacity:.8">Image + text + question. To live through the state, not escape from it.</p></div>
+      <a href="https://petals.digital/buy.html" target="_blank" class="plink" style="color:var(--deep)">petals.digital →</a>
+    </div>
+    <div class="pcard rev app">
+      <div><span class="ptag">In development</span><h3 class="pname">App</h3><p class="pdesc">Art therapy + AI. Interpretation of drawings and states through the Petals system.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec sec-bg" id="reviews">
+  <p class="slabel rev">Reviews</p>
+  <h2 class="stitle rev">What those who <em>already use it</em> say</h2>
+  <div class="rgrid">
+    <div class="rcard rev"><img src="review1.png" alt="Review of metaphorical cards Petals of You" loading="lazy"></div>
+    <div class="rcard rev"><img src="review2.png" alt="Psychologist review of MAK cards" loading="lazy"></div>
+    <div class="rcard rev"><img src="review3.png" alt="Review of psychological self-reflection cards" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- WHERE TO BUY -->
+<section class="sec sec-bg" id="buy">
+  <p class="slabel rev">Where to get</p>
+  <h2 class="stitle rev">Choose a convenient format</h2>
+  <div class="wgr3">
+    <div class="wcard rev">
+      <p class="wtype">Digital · Instant</p>
+      <h3 class="wtitle">PDF version</h3>
+      <p class="wprice">890 UAH</p>
+      <p class="wdesc">Download immediately after payment. For online sessions and self-work. Everything included — guide, scenarios, instructions.</p>
+      <a href="https://www.liqpay.ua/uk/checkout/card/checkout_1774720953467252_15570594_s8skQkZPZLNuGuQBkGUv" target="_blank" class="btn btn-p">Try the cards</a>
+      <span class="micro">Access immediately after purchase</span>
+    </div>
+    <div class="wcard rev">
+      <p class="wtype">Physical · With delivery</p>
+      <h3 class="wtitle">Physical deck</h3>
+      <p class="wprice">1200 UAH</p>
+      <p class="wdesc">For work in the office or for a client. Quality print, 80×130 mm format.</p>
+      <a href="https://www.liqpay.ua/uk/checkout/card/checkout_1774720953467252_15570594_s8skQkZPZLNuGuQBkGUv" target="_blank" class="btn btn-p">Order</a>
+      <span class="micro">Clarify availability and delivery</span>
+    </div>
+    <div class="wcard rev">
+      <p class="wtype">English version</p>
+      <h3 class="wtitle">Etsy / Gumroad</h3>
+      <p class="wprice" style="font-size:1.3rem">Workbooks & Journals</p>
+      <p class="wdesc">English materials from Algisa Bloom for international audience.</p>
+      <a href="https://www.etsy.com/shop/Petalsdigital?dd_referrer=" target="_blank" class="btn btn-g">Go to →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FREE GUIDE -->
+<section class="fguide" id="free">
+  <div class="rev">
+    <span class="fbadge">Free</span>
+    <h2 class="ftitle">Free art therapy<br><em>guide</em></h2>
+    <p class="fdesc">You draw — and get a decryption. The first step to working with state through image. Without prior experience. Without psychological education. In 5 minutes.</p>
+    <a href="https://petals.digital/" target="_blank" class="btn btn-c">Get for free</a>
+    <span class="micro" style="color:rgba(250,248,244,.38)">Download immediately · Nothing extra</span>
+  </div>
+  <div class="fimg rev">
+    <img src="workbook.png" alt="Workbook and journal Petals of You — self-reflection tools" loading="lazy">
+  </div>
+</section>
+
+<!-- AUTHOR -->
+<section class="sec" id="author">
+  <p class="slabel rev">Brand</p>
+  <div class="authgrid">
+    <div class="authimg rev">
+      <img src="author.jpg" alt="Brand Petals.digital and Yavtushenko Yulia — author of metaphorical cards Petals of You" loading="lazy">
+    </div>
+    <div>
+      <h2 class="authtitle rev">Yavtushenko Yulia —<br><em>author of the system</em> for working with state</h2>
+      <p class="body rev" style="margin-bottom:1.4rem">I am not a psychologist or a coach. I create tools that help people see what is really happening to them — through image, questions and internal state. Without ready answers. Without "it will get better". With respect for what is right now.</p>
+      <p class="body rev">"Petals of You" — a transformational navigation deck with original, non-traditional metaphors. First in the line of products. Next — workbooks, journals, visual stories and art therapy app.</p>
+      <p class="authnote rev">"One image can say more than an hour of conversation — if it's the right image."</p>
+    </div>
+  </div>
+</section>
+
+<!-- LIBRARY -->
+<section class="sec" id="library">
+  <p class="slabel rev">Library</p>
+  <h2 class="stitle rev">State library — <em>images and tools</em> for working with yourself</h2>
+  <div class="lgrid">
+    <div class="lcard rev"><p class="ltag">State · Emotion</p><h3 class="ltitle">Overload: what it looks like and what to do with it</h3><p class="ldesc">State description, characteristic images, self-reflection questions and a card from the deck.</p><span class="lsoon">Soon</span></div>
+    <div class="lcard rev"><p class="ltag">State · Emotion</p><h3 class="ltitle">Internal noise: when thoughts are circling and there is no silence</h3><p class="ldesc">What happens when the head "doesn't turn off". Image and three precise questions.</p><span class="lsoon">Soon</span></div>
+    <div class="lcard rev"><p class="ltag">State · Metaphor</p><h3 class="ltitle">Protective state: why we "put on a helmet"</h3><p class="ldesc">About protective mechanisms, readiness for danger and the right to a safe space.</p><span class="lsoon">Soon</span></div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-fin" id="contact">
+  <div class="cta-con">
+    <p class="cta-ey rev">Start right now</p>
+    <h2 class="cta-t rev">The first point of clarity can be obtained <em>today</em></h2>
+    <p class="cta-s rev">One image. One question. First clear understanding — for yourself or for working with clients.</p>
+    <div class="cta-btns rev">
+      <div>
+        <a href="https://www.liqpay.ua/uk/checkout/card/checkout_1774720953467252_15570594_s8skQkZPZLNuGuQBkGUv" target="_blank" class="btn btn-p">Try in 5 minutes</a>
+        <span class="micro">Access immediately after purchase</span>
+      </div>
+      <a href="https://t.me/aiartpetals" target="_blank" class="btn btn-g">Ask a question</a>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<div class="qband rev">
+  <p class="qlarge">"I don't give answers. I create conditions in which a person sees them themselves."</p>
+  <div class="qdiv"></div>
+  <p class="qsmall">The main difference of this approach</p>
+</div>
+
+<section class="sec">
+  <p class="slabel">Try now</p>
+  <h2 class="stitle">One image. <em>What do you feel?</em></h2>
+  
+  <p class="body" style="margin-top:1rem">
+  Look at this image and ask yourself one question:
+  what resonates most in it?
+  </p>
+
+  <div style="margin-top:2rem">
+    <a href="https://t.me/aiartpetals" target="_blank" class="btn btn-p">See more cards</a>
+  </div>
+</section>
+
+<!-- SEO -->
+<section class="seoblock">
+  <h2 class="seotitle">Metaphorical Cards "Petals of You" — MAK cards and self-reflection tools from Petals.digital</h2>
+  <div class="seotext">
+    <p>"Petals of You" — an author's deck of art-metaphorical cards (MAK cards), developed as a self-reflection tool and psychological work. The deck contains 31 state cards with original metaphorical images, intervention scenarios and a system of ecological questions.</p>
+    <p>These psychological cards are suitable for daily self-practice and for use by psychologists, coaches and art therapists. Unlike typical MAK cards, the deck does not contain ready interpretations — it helps see your own state through image and precise question.</p>
+    <p>Author — Yavtushenko Yulia, creator of the self-reflection tools system Petals.digital. The deck is available in digital format (PDF, 890 UAH) and as a physical deck (1200 UAH). Free art therapy guide is available on petals.digital.</p>
+  </div>
+</section>
+
+<footer id="footer">
+  <p class="flogo">Petals.digital</p>
+  <p class="fcopy">© 2026 Algisa Bloom · All rights reserved</p>
+  <div class="flinks">
+    <a href="https://www.instagram.com/petalsdigital" target="_blank">Instagram</a>
+    <a href="https://t.me/aiartpetals" target="_blank">Telegram</a>
+    <a href="mailto:petalsdigitalcontact@gmail.com">Email</a>
+    <a href="/index.html">UA</a>
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(e => e.forEach(x => { if(x.isIntersecting) x.target.classList.add('vis'); }), {threshold:.1});
+document.querySelectorAll('.rev').forEach(el => obs.observe(el));
+document.querySelectorAll('.agrid,.hgrid,.pgrid,.cshowcase,.rgrid,.lgrid,.wgr3').forEach(g => {
+  g.querySelectorAll('.rev').forEach((el,i) => el.style.transitionDelay = `${i*.1}s`);
+});
+const sc = document.getElementById('sc');
+window.addEventListener('scroll', () => {
+  sc.classList.toggle('vis', window.scrollY > window.innerHeight * .7);
+});
+</script>
+</body>
+</html>
