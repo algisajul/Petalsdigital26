@@ -297,17 +297,6 @@ footer{background:var(--deep);padding:2.5rem 5rem;display:flex;flex-direction:co
   </div>
 </section>
 
-<!-- DEMO -->
-<section class="sec" id="demo">
-  <h2 class="stitle">Витягни карту</h2>
-  <a href="#cards" class="btn btn-p" onclick="drawCard()">
-    Витягнути карту
-  </a>
-  <p id="cardText" class="body" style="margin-top:20px;"></p>
-</section>
-
-
-
 <!-- WHAT -->
 <section class="sec" id="what">
   <p class="slabel rev">Що це таке</p>
@@ -601,20 +590,5 @@ window.addEventListener('scroll', () => {
   sc.classList.toggle('vis', window.scrollY > window.innerHeight * .7);
 });
 </script>
-<script>
-const cards = [
-  "Що ти зараз намагаєшся не відчувати?",
-  "Де ти втрачаєш опору?",
-  "Що в цьому образі про тебе?",
-  "Що тебе виснажує прямо зараз?"
-];
-
- function drawCard(){
-  const random = cards[Math.floor(Math.random() * cards.length)];
-  document.getElementById("cardText").innerText = "👉 " + random;
-}
-</script>
-
-
 </body>
 </html>
