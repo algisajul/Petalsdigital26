@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Метафоричні карти «Пелюстки тебе» — інструмент саморефлексії | Petals.digital</title>
+<meta name="description" content="МАК карти «Пелюстки тебе» — інструмент саморефлексії, який через образ і питання допомагає побачити свій реальний стан. 31 карта станів. Для себе і для роботи з клієнтами. Автор Algisa Bloom.">
+<meta name="keywords" content="метафоричні карти, МАК карти, психологічні карти, інструменти саморефлексії, карти для психолога, арт-терапія, пелюстки тебе, petals digital">
+<link rel="alternate" hreflang="en" href="/en.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Petals.digital","url":"https://petals.digital","contactPoint":{"@type":"ContactPoint","email":"petalsdigitalcontact@gmail.com"}},{"@type":"Product","name":"Метафоричні карти «Пелюстки тебе»","description":"31 арт-метафорична карта для роботи зі станами, емоціями та внутрішніми процесами","brand":{"@type":"Brand","name":"Petals.digital"},"offers":[{"@type":"Offer","price":"890","priceCurrency":"UAH","name":"PDF версія"},{"@type":"Offer","price":"1200","priceCurrency":"UAH","name":"Фізична колода"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Для кого підходять МАК карти «Пелюстки тебе»?","acceptedAnswer":{"@type":"Answer","text":"Для самостійної саморефлексії і для психологів, коучів, арт-терапевтів у роботі з клієнтами."}},{"@type":"Question","name":"Який перший результат від карт?","acceptedAnswer":{"@type":"Answer","text":"За 5 хвилин людина отримує перше чітке розуміння свого стану через образ і точні питання."}}]}]}
+</script>
+<style>
+:root{--cream:#F5F0E8;--warm:#FAF8F4;--sand:#E8DFD0;--clay:#B8956E;--earth:#9CA8A0;--deep:#2C2218;--mist:#CFC6B8;--blush:#D4B8A8;--sage:#6E7F72;--ink:#1A1410;--accent:#B86F52;}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--ink);overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.3rem 4rem;display:flex;justify-content:space-between;align-items:center;background:rgba(250,248,244,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(196,168,130,.18)}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:400;letter-spacing:.12em;color:var(--earth);text-decoration:none}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{  font-size:.85rem;
+  color:var(--earth);
+  opacity:.85;
+  transition:opacity 0.3s, color 0.3s;}
+.nav-links a:hover{opacity:1; color:var(--deep);}
+.btn{padding:.6rem 1.2rem;font-family:'DM Sans',sans-serif;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;border:none;cursor:pointer;text-decoration:none;display:inline-block;transition:all .3s}
+.btn-p{background:#2C2218;  color:#fff;  box-shadow:0 6px 20px rgba(0,0,0,0.15);}.btn-p:hover{
+  background:#B8956E;
+  transform:translateY(-2px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);}
+.btn-g{background:transparent;color:var(--earth);border:1px solid var(--clay)}.btn-g:hover{background:var(--sand)}
+.btn-c{background:var(--clay);color:var(--cream)}.btn-c:hover{background:var(--earth)}
+.micro{font-size:.7rem;color:var(--deep);opacity:.4;display:block;margin-top:.75rem;letter-spacing:.03em}
+
+/* HERO */
+.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;padding-top:80px;overflow:hidden}
+.hero-l{padding:6rem 3.5rem 5rem 5rem;display:flex;flex-direction:column;justify-content:center}
+.eyebrow{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--clay);margin-bottom:1.8rem;opacity:0;animation:fu .8s .2s forwards}
+h1.hero-t{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,3.8vw,3.6rem);font-weight:500;line-height:1.15;color:var(--deep);margin-bottom:1.8rem;opacity:0;animation:fu .9s .35s forwards}
+.hero-sub{font-size:1rem;line-height:1.75;color:var(--deep);opacity:0;max-width:440px;margin-bottom:3rem;font-weight:500;animation:fu .9s .5s forwards}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap;opacity:0;animation:fu .9s .65s forwards}
+.hero-r{position:relative;overflow:hidden}
+.hero-r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;opacity:0;animation:fi 1.2s .8s forwards}
+.hero-r::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,rgba(250,248,244,.25) 0%,transparent 30%)}
+
+/* QUOTE */
+.qband{background:var(--deep);padding:4rem 5rem;display:flex;align-items:center;gap:4rem}
+.qlarge{font-family:'Cormorant Garamond',serif;font-size:clamp(1.7rem,2.8vw,2.5rem);font-weight:500;font-style:italic;color:var(--cream);line-height:1.4;flex:1;max-width:680px}
+.qdiv{width:1px;height:80px;background:var(--clay);flex-shrink:0}
+.qsmall{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);flex-shrink:0;max-width:180px;line-height:1.9}
+
+/* STATS */
+.stats{background:var(--cream);padding:3rem 5rem;display:flex;align-items:center;gap:5rem;border-top:1px solid var(--sand);flex-wrap:wrap}
+.stat{display:flex;flex-direction:column;align-items:center;text-align:center;gap:.4rem;flex:1;min-width:100px}
+.stat-n{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:500;color:var(--earth);line-height:1}
+.stat-l{font-size:.75rem;letter-spacing:.1em;color:var(--deep);opacity:.55;text-transform:uppercase}
+.sdiv{width:1px;height:50px;background:var(--sand)}
+
+/* SECTIONS */
+.sec{padding:6rem 5rem}.sec-bg{background:var(--cream)}
+.slabel{font-size:.67rem;letter-spacing:.26em;text-transform:uppercase;color:var(--clay);margin-bottom:2.5rem}
+.stitle{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,3vw,2.9rem);font-weight:300;line-height:1.25;color:var(--deep)}
+.stitle em{font-style:italic;color:var(--earth)}
+.body{font-size:.95rem;line-height:1.88;color:var(--deep);opacity:.63;font-weight:300}
+
+/* WHAT */
+.wgrid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+.pillars{display:flex;flex-direction:column;gap:1.2rem;margin-top:2rem}
+.pillar{display:flex;gap:1.1rem;align-items:flex-start}
+.pdot{width:5px;height:5px;border-radius:50%;background:var(--clay);margin-top:.55rem;flex-shrink:0}
+.ptext{font-size:.93rem;color:var(--deep);line-height:1.65;font-weight:300}
+
+/* 5 MIN */
+.fivemin{background:var(--earth);padding:4rem 5rem;display:flex;align-items:center;gap:5rem}
+.fivemin-n{font-family:'Cormorant Garamond',serif;font-size:5rem;font-weight:300;color:rgba(250,248,244,.18);line-height:1;flex-shrink:0}
+.fivemin-t{font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:300;color:var(--cream);margin-bottom:.9rem;line-height:1.3}
+.fivemin-t em{font-style:italic}.fivemin-b{font-size:.9rem;line-height:1.8;color:rgba(250,248,244,.6);font-weight:300;max-width:500px}
+
+/* AUDIENCE */
+.agrid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:3.5rem}
+.acard{background:var(--warm);padding:2.5rem 1.8rem;border-top:2px solid transparent;transition:border-color .3s,background .3s}
+.acard:hover{border-color:var(--clay);background:#fff}
+.aicon{font-size:1.4rem;margin-bottom:1rem;opacity:.45}
+.atitle{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:400;color:var(--deep);margin-bottom:.65rem;line-height:1.3}
+.adesc{font-size:.82rem;line-height:1.7;color:var(--deep);opacity: .75;;font-weight:300}
+
+/* HOW */
+.hgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;margin-top:3.5rem;position:relative}
+.hgrid::before{content:'';position:absolute;top:1.8rem;left:1.5rem;right:1.5rem;height:1px;background:var(--sand)}
+.hstep{padding-right:1.5rem}
+.hnum{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;color:var(--sand);line-height:1;margin-bottom:1.4rem}
+.htitle{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:500;color:var(--deep);margin-bottom:.65rem}
+.hdesc{font-size:.95rem;line-height:1.75;color:var(--deep);opacity:.75;font-weight:300}
+
+/* DIFF */
+.diff-sec{background:var(--deep);padding:6rem 5rem;position:relative;overflow:hidden}
+.diff-sec::before{content:'';position:absolute;top:-200px;right:-200px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(196,168,130,.07) 0%,transparent 70%)}
+.diff-lead{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,3rem);font-weight:300;color:var(--cream);max-width:680px;line-height:1.3;margin-bottom:4.5rem}
+.diff-lead em{font-style:italic;color:var(--clay)}
+.dtable{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+.dhead{font-size:.67rem;letter-spacing:.22em;text-transform:uppercase;padding:1.1rem 1.8rem;background:rgba(255,255,255,.04)}
+.dhead.oth{color:rgba(250,248,244,.3)}.dhead.pet{color:var(--clay)}
+.dcell{padding:1.3rem 1.8rem;font-size:.87rem;line-height:1.6;border-top:1px solid rgba(255,255,255,.05);font-weight:300}
+.dcell.oth{color:rgba(250,248,244,.37);background:rgba(255,255,255,.02)}
+.dcell.pet{color:var(--cream);background:rgba(196,168,130,.07)}
+
+/* PRODUCTS */
+.pgrid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:auto auto;gap:2px}
+.pcard{background:var(--cream);padding:2.5rem;display:flex;flex-direction:column;justify-content:space-between;min-height:255px;transition:background .3s}
+.pcard:hover{background:var(--sand)}
+.pcard.feat{background:var(--earth);grid-row:1/3}.pcard.feat:hover{background:var(--deep)}
+.pcard.journals{background:var(--sage);color:var(--cream);border:1px solid rgba(156,168,160,.25);}
+.pcard.journals .ptag{color:var(--cream);border-color:rgba(250,248,244,.4);}
+.pcard.journals .pname{color:var(--cream)}
+.pcard.journals .pdesc{color:rgba(250,248,244,.9)}
+.pcard.journals .plink{color:var(--cream)}
+.pcard.journals:hover{background:rgba(118,129,114,.9)}
+.pcard.workbooks{background:var(--sand);color:var(--deep);border:1px solid var(--clay);}
+.pcard.workbooks .ptag{color:var(--deep);border-color:var(--clay)}
+.pcard.workbooks .pname{color:var(--deep)}
+.pcard.workbooks .pdesc{color:var(--deep);opacity:.8}
+.pcard.workbooks .plink{color:var(--earth)}
+.pcard.book{background:var(--cream);color:var(--deep);border:1px solid var(--sand);}
+.pcard.book .ptag{color:var(--deep);border-color:var(--clay)}
+.pcard.book .pname{color:var(--deep)}
+.pcard.book .pdesc{color:var(--deep);opacity:.85}
+.pcard.book .plink{color:var(--earth)}
+.pcard.feat .plink{color:var(--cream)}.pcard:not(.feat) .plink{color:var(--earth)}
+.ptag{display:inline-block;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;padding:.3rem .75rem;border:1px solid;margin-bottom:1.2rem;width:fit-content}
+.pcard.feat .ptag{color:rgba(250,248,244,.42);border-color:rgba(250,248,244,.2)}
+.pcard:not(.feat) .ptag{color:var(--earth);border-color:var(--clay)}
+.pname{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;line-height:1.3;margin-bottom:.75rem}
+.pcard.feat .pname{color:var(--cream);font-size:1.9rem}
+.pcard:not(.feat) .pname{color:var(--deep)}
+.pdesc{font-size:.95rem;line-height:1.7;font-weight:300;margin-bottom:1rem}
+.pcard.feat .pdesc{color:rgba(250,248,244,.65)}.pcard:not(.feat) .pdesc{color:var(--deep);opacity:.55}
+.pprice{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--cream);margin-bottom:.3rem}
+.pprice-alt{font-size:.95rem;color:rgba(250,248,244,.45);margin-bottom:1rem}
+.plink{text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;font-size:.77rem;letter-spacing:.1em;text-transform:uppercase;transition:gap .3s;margin-top:.8rem}
+.pcard.feat .plink{color:var(--cream)}.pcard:not(.feat) .plink{color:var(--earth)}.plink:hover{gap:1rem}
+
+/* WHERE */
+.wgr3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;margin-top:3rem}
+.wcard{background:var(--warm);padding:2.5rem 2rem;border-bottom:3px solid transparent;transition:border-color .3s}
+.wcard:hover{border-color:var(--clay)}
+.wtype{font-size:.67rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.8rem}
+.wtitle{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--deep);margin-bottom:.5rem}
+.wprice{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--earth);margin-bottom:.8rem}
+.wdesc{font-size:.95rem;line-height:1.65;color:var(--deep);opacity:.75;margin-bottom:1.5rem;font-weight:300}
+
+/* FREE GUIDE */
+.fguide{background:var(--deep);padding:5rem;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.fbadge{display:inline-block;font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--clay);border:1px solid rgba(196,168,130,.4);padding:.33rem .9rem;margin-bottom:1.4rem}
+.ftitle{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,2.8vw,2.8rem);font-weight:300;color:var(--cream);line-height:1.3;margin-bottom:1.1rem}
+.ftitle em{font-style:italic;color:var(--clay)}
+.fdesc{font-size:.9rem;line-height:1.85;color:rgba(250,248,244,.58);font-weight:300;margin-bottom:2.5rem}
+.fimg{aspect-ratio:4/3;overflow:hidden}
+.fimg img{width:100%;height:100%;object-fit:cover;filter:brightness(.82)}
+
+/* CARDS */
+.cshowcase{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;margin-top:3.5rem}
+.sc{aspect-ratio:3/4;position:relative;overflow:hidden;cursor:pointer;transition:transform .4s}
+.sc:hover{transform:translateY(-8px) scale(1.02)}
+.sc img{width:100%;height:100%;object-fit:cover}
+.scov{position:absolute;inset:0;background:linear-gradient(to top,rgba(28,18,10,.7) 0%,transparent 50%);display:flex;align-items:flex-end;padding:1.1rem}
+.scname{font-family:'Cormorant Garamond',serif;font-size:.75rem;color:rgba(250,248,244,.85);line-height:1.4;font-style:italic}
+
+.neutral-banner{background:var(--warm);padding:1.5rem 0;text-align:center}
+.neutral-banner img{width:100%;max-height:320px;object-fit:cover;border-radius:12px;opacity:.95}
+
+/* поліпшений розмір відгуків */
+.rgrid .rcard img{height:220px;object-fit:cover;}
+
+.pcard.app{background:var(--mist);color:var(--deep);border:1px solid rgba(156,168,160,.45);opacity:1}
+.pcard.app .ptag{color:var(--deep);border-color:rgba(156,168,160,.6)}
+.pcard.app .pname{color:var(--deep)}
+.pcard.app .pdesc{color:var(--deep);opacity:.85}
+
+/* AUTHOR */
+.authgrid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.authimg{aspect-ratio:4/5;overflow:hidden}
+.authimg img{width:100%;height:100%;object-fit:cover;object-position:top;filter:grayscale(12%)}
+.authtitle{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,2.8vw,2.6rem);font-weight:300;line-height:1.3;color:var(--deep);margin-bottom:1.8rem}
+.authtitle em{font-style:italic;color:var(--earth)}
+.authnote{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--clay);border-left:2px solid var(--clay);padding-left:1.5rem;line-height:1.6;margin-top:2rem}
+
+/* REVIEWS */
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:3.5rem}
+.rcard{background:var(--warm);overflow:hidden}
+.rcard img{width:100%;display:block;object-fit:cover}
+
+/* LIBRARY */
+.lgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:3.5rem}
+.lcard{background:var(--cream);padding:2rem 1.8rem;border-top:2px solid transparent;transition:border-color .3s;cursor:pointer}
+.lcard:hover{border-color:var(--clay)}
+.ltag{font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.75rem}
+.ltitle{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--deep);margin-bottom:.55rem;line-height:1.3}
+.ldesc{font-size:.81rem;line-height:1.65;color:var(--deep);opacity:.75;font-weight:300}
+.lsoon{display:inline-block;margin-top:.8rem;font-size:.63rem;letter-spacing:.15em;text-transform:uppercase;color:var(--mist)}
+
+/* SEO */
+.seoblock{padding:4rem 5rem;background:var(--sand)}
+.seotitle{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:400;color:var(--deep);margin-bottom:1.1rem}
+.seotext{font-size:.84rem;line-height:1.9;color:var(--deep);opacity:.58;font-weight:300;max-width:900px}
+.seotext p{margin-bottom:.8rem}
+
+/* CTA FINAL */
+.cta-fin{padding:8rem 5rem;text-align:center;background:var(--warm);position:relative;overflow:hidden}
+.cta-fin::before{content:'Пелюстки';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Cormorant Garamond',serif;font-size:18vw;font-weight:300;color:var(--sand);white-space:nowrap;pointer-events:none;opacity:.5}
+.cta-con{position:relative;z-index:2}
+.cta-ey{font-size:.67rem;letter-spacing:.26em;text-transform:uppercase;color:var(--clay);margin-bottom:1.8rem}
+.cta-t{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.8rem);font-weight:300;color:var(--deep);line-height:1.2;max-width:700px;margin:0 auto 1.3rem}
+.cta-t em{font-style:italic;color:var(--earth)}
+.cta-s{font-size:.92rem;color:var(--deep);opacity:.48;margin-bottom:3rem;font-weight:300;max-width:480px;margin-left:auto;margin-right:auto}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+
+/* STICKY */
+.sticky{position:fixed;bottom:2rem;right:2rem;z-index:200;background:var(--earth);color:var(--cream);font-family:'DM Sans',sans-serif;font-size:.77rem;letter-spacing:.08em;text-transform:uppercase;padding:1rem 1.8rem;text-decoration:none;box-shadow:0 8px 32px rgba(44,34,24,.28);opacity:0;pointer-events:none;transition:opacity .4s,background .3s,transform .2s}
+.sticky.vis{opacity:1;pointer-events:auto}.sticky:hover{background:var(--deep);transform:translateY(-2px)}
+
+/* FOOTER */
+footer{background:var(--deep);padding:2.5rem 5rem;display:flex;flex-direction:column;align-items:center;text-align:center;gap:.8rem}
+.flogo{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--cream);opacity:.75;letter-spacing:.1em}
+.fcopy{font-size:.71rem;color:var(--cream);opacity:.27;letter-spacing:.07em;order:2;margin-top:.3rem}
+.flinks{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap}
+.flinks a{font-size:.71rem;letter-spacing:.1em;text-transform:uppercase;color:var(--cream);opacity:.36;text-decoration:none;transition:opacity .3s}
+.flinks a:hover{opacity:.8}
+
+/* ANIM */
+@keyframes fu{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fi{from{opacity:0}to{opacity:1}}
+.rev{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}.rev.vis{opacity:1;transform:translateY(0)}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  nav{padding:1.2rem 2.5rem}
+  .hero{grid-template-columns:1fr}.hero-r{display:none}
+  .hero-l{padding:6rem 2.5rem 4rem}
+  .sec,.sec-bg,.diff-sec,.fguide,.fivemin,.seoblock,.cta-fin{padding:4rem 2.5rem}
+  .qband,.stats{padding:3rem 2.5rem}
+  .agrid{grid-template-columns:repeat(2,1fr)}
+  .hgrid{grid-template-columns:repeat(2,1fr);gap:2.5rem}
+  .dtable{grid-template-columns:1fr}.dhead.oth,.dcell.oth{display:none}
+  .pgrid{grid-template-columns:1fr 1fr}.pcard.feat{grid-column:1/3;grid-row:auto}
+  .cshowcase{grid-template-columns:repeat(3,1fr)}
+  .authgrid{grid-template-columns:1fr}
+  .fguide{grid-template-columns:1fr;gap:2rem}
+  .rgrid{grid-template-columns:1fr}
+  .lgrid{grid-template-columns:repeat(2,1fr)}
+  .wgr3{grid-template-columns:1fr 1fr}
+  .qband{flex-direction:column;gap:2rem}
+  .fivemin{flex-direction:column;gap:1.5rem}
+  footer{flex-direction:column;gap:1.5rem;text-align:center;padding:2rem 2.5rem}
+  .wgrid{grid-template-columns:1fr;gap:2rem}
+}
+@media(max-width:640px){
+  .nav-links{display:none}
+  .agrid,.hgrid,.pgrid,.lgrid,.wgr3{grid-template-columns:1fr}
+  .pcard.feat{grid-column:auto}
+  .cshowcase{grid-template-columns:repeat(2,1fr)}
+  .cta-fin::before{font-size:28vw}
+  .sticky{bottom:1rem;right:1rem;padding:.85rem 1.4rem}
+}
+</style>
+</head>
+<body>
+
+<a href="https://petalsdigital.my.canva.site/proficard" target="_blank" class="sticky" id="sc">Отримати доступ →</a>
+
+<nav>
+  <a href="#" class="logo">Petals.digital</a>
+  <ul class="nav-links">
+    <li><a href="#what">Про інструменти</a></li>
+    <li><a href="#products">Продукти</a></li>
+    <li><a href="#author">Автор</a></li>
+    <li><a href="#library">Бібліотека</a></li>
+    <li><a href="#footer" aria-label="Контакт - посилання на футер з Telegram та Instagram">Контакт</a></li>
+  </ul>
+  <a href="https://petalsdigital.my.canva.site/proficard" target="_blank" class="btn btn-p">Обрати інструмент для себе</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-l">
+    <p class="eyebrow">Petals.digital · Явтушенко Юлія · Метафоричні карти</p>
+    <h1 class="hero-t">МАК карти «Пелюстки тебе» — інструмент, який <em>допомагає зрозуміти свій стан за 5 хвилин — без психолога</em></h1>
+    <p class="hero-sub">Метафоричні карти та інструменти саморефлексії, які дають першу точку ясності вже за кілька хвилин</p>
+    <div class="hero-cta">
+      <a href="https://petalsdigital.my.canva.site/proficard" target="_blank" class="btn btn-p">Отримати доступ</a>
+      <a href="#what" class="btn btn-g">Подивитись як це працює</a>
+    </div>
+    <span class="micro">Доступ одразу після покупки · Працює для себе і в роботі з клієнтами</span>
+  </div>
+  <div class="hero-r">
+    <img src="cards.png" alt="Метафоричні карти Пелюстки тебе — психологічні карти для саморефлексії" loading="lazy">
+  </div>
+</section>
+
+<!-- DEMO -->
+<section class="sec" id="demo">
+  <h2 class="stitle">Витягни карту</h2>
+  <a href="#cards" class="btn btn-p" onclick="drawCard()">
+    Витягнути карту
+  </a>
+  <p id="cardText" class="body" style="margin-top:20px;"></p>
+</section>
+
+
+
+<!-- WHAT -->
+<section class="sec" id="what">
+  <p class="slabel rev">Що це таке</p>
+  <div class="wgrid">
+    <div class="rev">
+      <h2 class="stitle">Не терапія. Не поради.<br><em>Спосіб побачити свій стан</em> без спотворень.</h2>
+    </div>
+    <div class="rev">
+      <p class="body" style="margin-bottom:2rem">МАК карти «Пелюстки тебе» — інструмент саморефлексії, який через образ і точні питання допомагає побачити свій реальний стан без нав'язаних трактувань. Не просто карти, а спосіб побачити, що з тобою насправді відбувається.</p>
+      <div class="pillars">
+        <div class="pillar"><div class="pdot"></div><p class="ptext">Показує стан без пояснень — один образ каже більше, ніж година розмови</p></div>
+        <div class="pillar"><div class="pdot"></div><p class="ptext">Запускає внутрішній діалог через образ, питання і тілесну реакцію</p></div>
+        <div class="pillar"><div class="pdot"></div><p class="ptext">Дає перше точне розуміння — без «все буде добре» і шаблонних інтерпретацій</p></div>
+        <div class="pillar"><div class="pdot"></div><p class="ptext">Повертає до реального стану — не до ідеальної версії, а до живої</p></div>
+      </div>
+      <div style="margin-top:2.5rem">
+        <a href="https://petalsdigital.my.canva.site/proficard" target="_blank" class="btn btn-p">Спробувати карти</a>
+        <span class="micro">Доступ одразу після покупки</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats rev">
+  <div class="stat"><span class="stat-n">31</span><span class="stat-l">карта станів</span></div>
+  <div class="sdiv"></div>
+  <div class="stat"><span class="stat-n">5 хв</span><span class="stat-l">перший ефект</span></div>
+  <div class="sdiv"></div>
+  <div class="stat"><span class="stat-n">2</span><span class="stat-l">формати</span></div>
+  <div class="sdiv"></div>
+  <div class="stat"><span class="stat-n">2в1</span><span class="stat-l">для себе і практика</span></div>
+</div>
+
+<!-- 5 MIN -->
+<div class="fivemin rev">
+  <div class="fivemin-n">5'</div>
+  <div>
+    <h3 class="fivemin-t">Перший результат <em>за 5 хвилин</em></h3>
+    <p class="fivemin-b">Ти дивишся на образ — з'являється реакція, часто несподівана. Через неї відкривається стан. За 5 хвилин отримуєш перше чітке розуміння. Для дому, для сесії, для тихого вечора з собою.</p>
+  </div>
+</div>
+
+<!-- FOR WHOM -->
+<section class="sec sec-bg" id="forwho">
+  <p class="slabel rev">Для кого</p>
+  <h2 class="stitle rev">Психологічні карти, <em>які підходять професійним психологам та для самостійної роботи одночасно</em></h2>
+  <div class="agrid">
+    <div class="acard rev"><div class="aicon">○</div><h3 class="atitle">Відчуваєш перевантаження — і не можеш пояснити чому</h3><p class="adesc">Є лише втома, напруга або порожнеча. Без слів. Карти дають першу точку ясності.</p></div>
+    <div class="acard rev"><div class="aicon">○</div><h3 class="atitle">Багато думаєш, але немає ясності</h3><p class="adesc">Думки кружляють. Аналіз є — відповіді немає. Образ відкриває те, до чого не добратися словами.</p></div>
+    <div class="acard rev"><div class="aicon">○</div><h3 class="atitle">Психолог, коуч, арт-терапевт</h3><p class="adesc">31 сценарій інтервенцій + ліцензія для практиків. Готовий інструмент без підготовки.</p></div>
+    <div class="acard rev"><div class="aicon">○</div><h3 class="atitle">Хочеш коротку практику з собою</h3><p class="adesc">Три хвилини і один образ — і вже ясніше. Щодня або коли потрібно.</p></div>
+  </div>
+  <div style="margin-top:2.5rem" class="rev">
+    <a href="https://petalsdigital.my.canva.site/proficard" target="_blank" class="btn btn-p">Обрати інструмент для себе</a>
+    <span class="micro">Доступ одразу після покупки · Працює для себе і в роботі з клієнтами</span>
+  </div>
+</section>
+
+<!-- HOW -->
+<section class="sec" id="how">
+  <p class="slabel rev">Як це працює</p>
+  <h2 class="stitle rev">Інструменти саморефлексії, <em>що дають ясність через образ</em></h2>
+  <div class="hgrid">
+    <div class="hstep rev"><div class="hnum">01</div><h3 class="htitle">Стикаєшся з образом</h3><p class="hdesc">Без інструкцій. Просто образ і кілька секунд тиші.</p></div>
+    <div class="hstep rev"><div class="hnum">02</div><h3 class="htitle">З'являється реакція</h3><p class="hdesc">Тілесна, емоційна або думка, яка прийшла першою. Саме вона — важлива.</p></div>
+    <div class="hstep rev"><div class="hnum">03</div><h3 class="htitle">Стає видно стан</h3><p class="hdesc">Не пояснений — а побачений. Без фільтра «як треба відповідати».</p></div>
+    <div class="hstep rev"><div class="hnum">04</div><h3 class="htitle">З'являється точка</h3><p class="hdesc">Конкретна. Реальна. З якою вже можна працювати самостійно або з фахівцем.</p></div>
+  </div>
+  <div style="margin-top:3rem" class="rev">
+    <a href="https://petalsdigital.my.canva.site/proficard" target="_blank" class="btn btn-p">Спробувати карти</a>
+    <span class="micro">Доступ одразу після покупки</span>
+  </div>
+</section>
+
+<!-- DIFFERENCE -->
+<section class="diff-sec">
+  <p class="slabel rev" style="color:var(--clay)">Чим це відрізняється</p>
+  <h2 class="diff-lead rev">Не заспокоює. <em>Дає ясність.</em><br>Тому що справжня підтримка — це не «все буде добре».</h2>
+  <div class="dtable rev">
+    <div class="dhead oth">Інші МАК карти</div><div class="dhead pet">«Пелюстки тебе»</div>
+    <div class="dcell oth">Набір образів без системи</div><div class="dcell pet">31 карта + сценарії + гайд + ліцензія для практиків</div>
+    <div class="dcell oth">Або для себе, або для практика</div><div class="dcell pet">Два повноцінних формати в одному продукті</div>
+    <div class="dcell oth">Готові інтерпретації — «ця карта означає...»</div><div class="dcell pet">Жодних готових значень. Тільки екологічні питання</div>
+    <div class="dcell oth">Слабка естетика або поверхневий підхід</div><div class="dcell pet">Оригінальні нетрадиційні метафори, психологічна точність</div>
+    <div class="dcell oth">Без захисту авторського права</div><div class="dcell pet">Ліцензійна угода для практиків. Усе легально і прозоро</div>
+  </div>
+</section>
+
+<!-- CARDS -->
+<section class="sec" id="cards">
+  <p class="slabel rev">Приклади карт</p>
+  <h2 class="stitle rev">«Пелюстки тебе» — <em>31 образ</em> для роботи зі станом</h2>
+  <div class="cshowcase">
+    <div class="sc rev"><img src="cards1.png" alt="Метафоричні карти для саморефлексії" loading="lazy" style="object-position:0% 0%"><div class="scov"><span class="scname">Коли опора стала тимчасовою</span></div></div>
+    <div class="sc rev"><img src="cards2.png" alt="Психологічні карти стану" loading="lazy" style="object-position:100% 0%"><div class="scov"><span class="scname">Відпустити опір</span></div></div>
+    <div class="sc rev"><img src="cards3.png" alt="МАК карти для роботи з емоціями" loading="lazy" style="object-position:50% 50%"><div class="scov"><span class="scname">Захист</span></div></div>
+    <div class="sc rev"><img src="cards4.png" alt="МАК карти для психолога" loading="lazy" style="object-position:0% 100%"><div class="scov"><span class="scname">Дякую собі, що залишилась</span></div></div>
+    <div class="sc rev"><img src="cards5.png" alt="Метафоричні карти психологічні" loading="lazy" style="object-position:100% 100%"><div class="scov"><span class="scname">Я вже інша</span></div></div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="sec" id="products">
+  <p class="slabel rev">Інструменти</p>
+  <h2 class="stitle rev" style="margin-bottom:3.5rem">Система роботи зі станом.<br>Обери свій формат.</h2>
+  <div class="pgrid">
+    <div class="pcard feat rev">
+      <div>
+        <span class="ptag">Флагман · Вже доступно</span>
+        <h3 class="pname">Метафоричні карти<br>«Пелюстки тебе»</h3>
+        <p class="pdesc">31 карта станів + сценарії роботи + гайд інтеграції. Це не просто колода — це готовий інструмент. Для психологів і для самостійної роботи. Жодних готових інтерпретацій.</p>
+        <p class="pprice">890 (грн) — менше ніж 1 сесія психолога</p>
+        <p class="pprice-alt">PDF · або 1200 грн фізична колода</p>
+      </div>
+      <div>
+        <a href="https://petalsdigital.my.canva.site/proficard" target="_blank" class="plink">Спробувати карти →</a>
+        <span class="micro" style="color:rgba(250,248,244,.35)">Доступ одразу після покупки</span>
+      </div>
+    </div>
+    <div class="pcard rev workbooks">
+      <div><span class="ptag">Доступно</span><h3 class="pname">Воркбуки</h3><p class="pdesc">Структурована робота зі станом через питання — без води і шаблонних порад.</p></div>
+      <a href="https://www.etsy.com/shop/Petalsdigital?dd_referrer=" target="_blank" class="plink">Etsy / Gumroad →</a>
+    </div>
+    <div class="pcard rev journals">
+      <div><span class="ptag">Доступно</span><h3 class="pname">Журнали</h3><p class="pdesc">М'який формат щоденної саморефлексії для стабілізації і повернення до себе.</p></div>
+      <a href="https://www.etsy.com/shop/Petalsdigital?dd_referrer=" target="_blank" class="plink">Etsy / Gumroad →</a>
+    </div>
+    <div class="pcard rev book">
+      <div><span class="ptag" style="color:rgba(44,34,24,.55);border-color:rgba(44,34,24,.35)">Скоро</span><h3 class="pname" style="color:var(--deep)">Книга «Пелюстки тебе»</h3><p class="pdesc" style="color:var(--deep);opacity:.8">Образ + текст + питання. Щоб прожити стан, а не втекти від нього.</p></div>
+      <a href="https://petals.digital/buy.html" target="_blank" class="plink" style="color:var(--deep)">petals.digital →</a>
+    </div>
+    <div class="pcard rev app">
+      <div><span class="ptag">В розробці</span><h3 class="pname">Додаток</h3><p class="pdesc">Арт-терапія + AI. Інтерпретація малюнків і станів через систему Пелюстки.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec sec-bg" id="reviews">
+  <p class="slabel rev">Відгуки</p>
+  <h2 class="stitle rev">Що говорять ті, <em>хто вже користується</em></h2>
+  <div class="rgrid">
+    <div class="rcard rev"><img src="review1.png" alt="Відгук про метафоричні карти Пелюстки тебе" loading="lazy"></div>
+    <div class="rcard rev"><img src="review2.png" alt="Відгук психолога про МАК карти" loading="lazy"></div>
+    <div class="rcard rev"><img src="review3.png" alt="Відгук про психологічні карти саморефлексії" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- WHERE TO BUY -->
+<section class="sec sec-bg" id="buy">
+  <p class="slabel rev">Де отримати</p>
+  <h2 class="stitle rev">Обери зручний формат</h2>
+  <div class="wgr3">
+    <div class="wcard rev">
+      <p class="wtype">Цифровий · Миттєво</p>
+      <h3 class="wtitle">PDF версія</h3>
+      <p class="wprice">890 грн</p>
+      <p class="wdesc">Завантаження одразу після оплати. Для онлайн-сесій і самостійної роботи. Все включено — гайд, сценарії, інструкція.</p>
+      <a href="https://petalsdigital.my.canva.site/proficard" target="_blank" class="btn btn-p">Спробувати карти</a>
+      <span class="micro">Доступ одразу після покупки</span>
+    </div>
+    <div class="wcard rev">
+      <p class="wtype">Фізична · З доставкою</p>
+      <h3 class="wtitle">Фізична колода</h3>
+      <p class="wprice">1200 грн</p>
+      <p class="wdesc">Для роботи в кабінеті або для клієнта. Якісний друк, формат 80×130 мм.</p>
+      <a href="https://petalsdigital.my.canva.site/proficard" target="_blank" class="btn btn-p">Замовити</a>
+      <span class="micro">Уточнюйте наявність та доставку</span>
+    </div>
+    <div class="wcard rev">
+      <p class="wtype">Англійська версія</p>
+      <h3 class="wtitle">Etsy / Gumroad</h3>
+      <p class="wprice" style="font-size:1.3rem">Воркбуки & Журнали</p>
+      <p class="wdesc">Англомовні матеріали від Algisa Bloom для міжнародної аудиторії.</p>
+      <a href="https://www.etsy.com/shop/Petalsdigital?dd_referrer=" target="_blank" class="btn btn-g">Перейти →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FREE GUIDE -->
+<section class="fguide" id="free">
+  <div class="rev">
+    <span class="fbadge">Безкоштовно</span>
+    <h2 class="ftitle">Безкоштовний гайд<br><em>арт-терапії</em></h2>
+    <p class="fdesc">Ти малюєш — і отримуєш розшифровку. Перший крок до роботи зі станом через образ. Без попереднього досвіду. Без психологічної освіти. За 5 хвилин.</p>
+    <a href="https://petals.digital/" target="_blank" class="btn btn-c">Отримати безкоштовно</a>
+    <span class="micro" style="color:rgba(250,248,244,.38)">Завантаження одразу · Нічого зайвого</span>
+  </div>
+  <div class="fimg rev">
+    <img src="workbook.png" alt="Воркбук і журнал Пелюстки тебе — інструменти саморефлексії" loading="lazy">
+  </div>
+</section>
+
+<!-- AUTHOR -->
+<section class="sec" id="author">
+  <p class="slabel rev">Бренд</p>
+  <div class="authgrid">
+    <div class="authimg rev">
+      <img src="author.jpg" alt="Бренд Petals.digital та Явтушенко Юлія — автор метафоричних карт Пелюстки тебе" loading="lazy">
+    </div>
+    <div>
+      <h2 class="authtitle rev">Явтушенко Юлія —<br><em>автор системи</em> роботи зі станом</h2>
+      <p class="body rev" style="margin-bottom:1.4rem">Я не психолог і не коуч. Я створюю інструменти, які допомагають людям побачити, що з ними насправді відбувається — через образ, питання і внутрішній стан. Без готових відповідей. Без «стане краще». З повагою до того, що є прямо зараз.</p>
+      <p class="body rev">«Пелюстки тебе» — трансформаційна навігаційна колода з оригінальними, нетрадиційними метафорами. Перша у лінійці продуктів. Далі — воркбуки, журнали, візуальні історії і додаток з арт-терапії.</p>
+      <p class="authnote rev">"Один образ може сказати більше, ніж година розмови — якщо це правильний образ."</p>
+    </div>
+  </div>
+</section>
+
+<!-- LIBRARY -->
+<section class="sec" id="library">
+  <p class="slabel rev">Бібліотека</p>
+  <h2 class="stitle rev">Бібліотека станів — <em>образи та інструменти</em> для роботи з собою</h2>
+  <div class="lgrid">
+    <div class="lcard rev"><p class="ltag">Стан · Емоція</p><h3 class="ltitle">Перевантаження: як виглядає і що з цим робити</h3><p class="ldesc">Опис стану, характерні образи, питання для саморефлексії і карта з колоди.</p><span class="lsoon">Скоро</span></div>
+    <div class="lcard rev"><p class="ltag">Стан · Емоція</p><h3 class="ltitle">Внутрішній шум: коли думки кружляють і немає тиші</h3><p class="ldesc">Що відбувається, коли голова «не вимикається». Образ і три точні питання.</p><span class="lsoon">Скоро</span></div>
+    <div class="lcard rev"><p class="ltag">Стан · Метафора</p><h3 class="ltitle">Захисний стан: навіщо ми «надягаємо шолом»</h3><p class="ldesc">Про захисні механізми, готовність до небезпеки і право на безпечний простір.</p><span class="lsoon">Скоро</span></div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-fin" id="contact">
+  <div class="cta-con">
+    <p class="cta-ey rev">Почати прямо зараз</p>
+    <h2 class="cta-t rev">Першу точку ясності можна отримати <em>вже сьогодні</em></h2>
+    <p class="cta-s rev">Один образ. Одне питання. Перше чітке розуміння — для себе або для роботи з клієнтами.</p>
+    <div class="cta-btns rev">
+      <div>
+        <a href="https://petalsdigital.my.canva.site/proficard" target="_blank" class="btn btn-p">Спробувати за 5 хвилин</a>
+        <span class="micro">Доступ одразу після покупки</span>
+      </div>
+      <a href="https://t.me/petalsdigital" target="_blank" class="btn btn-g">Задати питання</a>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<div class="qband rev">
+  <p class="qlarge">"Я не даю відповідей. Я створюю умови, в яких людина бачить їх сама."</p>
+  <div class="qdiv"></div>
+  <p class="qsmall">Головна різниця цього підходу</p>
+</div>
+
+<section class="sec">
+  <p class="slabel">Спробуй зараз</p>
+  <h2 class="stitle">Один образ. <em>Що ти відчуваєш?</em></h2>
+  
+  <p class="body" style="margin-top:1rem">
+  Подивись на цей образ і задай собі одне питання:
+  що в ньому відгукується найбільше?
+  </p>
+
+  <div style="margin-top:2rem">
+    <a href="https://t.me/petalsdigital" target="_blank" class="btn btn-p">Подивитись ще карти</a>
+  </div>
+</section>
+
+<!-- SEO -->
+<section class="seoblock">
+  <h2 class="seotitle">Метафоричні карти «Пелюстки тебе» — МАК карти та інструменти саморефлексії від Petals.digital</h2>
+  <div class="seotext">
+    <p>«Пелюстки тебе» — авторська колода арт-метафоричних карт (МАК карти), розроблена як інструмент саморефлексії та психологічної роботи. Колода містить 31 карту станів із оригінальними метафоричними образами, сценаріями інтервенцій і системою екологічних питань.</p>
+    <p>Ці психологічні карти підходять для самостійної щоденної практики та для використання психологами, коучами і арт-терапевтами. На відміну від типових МАК карт, колода не містить готових інтерпретацій — вона допомагає побачити власний стан через образ і точне питання.</p>
+    <p>Автор — Явтушенко Юлія автор, творець системи інструментів саморефлексії Petals.digital. Колода доступна у цифровому форматі (PDF, 890 грн) та у вигляді фізичної колоди (1200 грн). Безкоштовний гайд арт-терапії доступний на petals.digital.</p>
+  </div>
+</section>
+
+<footer id="footer">
+  <p class="flogo">Petals.digital</p>
+  <p class="fcopy">© 2026 Algisa Bloom · Усі права захищено</p>
+  <div class="flinks">
+
+
+
+    <a href="https://www.instagram.com/petalsdigital" target="_blank">Instagram</a>
+    <a href="https://t.me/petalsdigital" target="_blank">Telegram</a>
+    <a href="mailto:petalsdigitalcontact@gmail.com">Email</a>
+    <a href="/en.html">EN</a>
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(e => e.forEach(x => { if(x.isIntersecting) x.target.classList.add('vis'); }), {threshold:.1});
+document.querySelectorAll('.rev').forEach(el => obs.observe(el));
+document.querySelectorAll('.agrid,.hgrid,.pgrid,.cshowcase,.rgrid,.lgrid,.wgr3').forEach(g => {
+  g.querySelectorAll('.rev').forEach((el,i) => el.style.transitionDelay = `${i*.1}s`);
+});
+const sc = document.getElementById('sc');
+window.addEventListener('scroll', () => {
+  sc.classList.toggle('vis', window.scrollY > window.innerHeight * .7);
+});
+</script>
+<script>
+const cards = [
+  "Що ти зараз намагаєшся не відчувати?",
+  "Де ти втрачаєш опору?",
+  "Що в цьому образі про тебе?",
+  "Що тебе виснажує прямо зараз?"
+];
+
+ function drawCard(){
+  const random = cards[Math.floor(Math.random() * cards.length)];
+  document.getElementById("cardText").innerText = "👉 " + random;
+}
+</script>
+
+
+</body>
+</html>
