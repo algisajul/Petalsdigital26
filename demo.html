@@ -1,0 +1,356 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Спробувати карту — Пелюстки</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #F5F0E8;
+      --warm: #FAF8F4;
+      --sand: #E8DFD0;
+      --clay: #B8956E;
+      --earth: #9CA8A0;
+      --deep: #2C2218;
+      --mist: #CFC6B8;
+      --ink: #1A1410;
+      --accent: #B86F52;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: 'DM Sans', sans-serif;
+      background: linear-gradient(180deg, var(--warm) 0%, var(--cream) 100%);
+      color: var(--ink);
+      padding: 40px 24px;
+      text-align: center;
+    }
+
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 18px;
+      font-size: .75rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--clay);
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      line-height: 1.05;
+      color: var(--deep);
+      margin-bottom: 18px;
+    }
+
+    p.lead {
+      max-width: 620px;
+      margin: 0 auto 32px;
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--earth);
+      opacity: .88;
+    }
+
+    .hero-button,
+    .action-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 24px;
+      border-radius: 999px;
+      border: none;
+      text-decoration: none;
+      font-size: .95rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: transform .25s ease, background .25s ease, box-shadow .25s ease;
+    }
+
+    .hero-button {
+      background: var(--deep);
+      color: #fff;
+      box-shadow: 0 14px 40px rgba(44, 34, 24, .12);
+    }
+
+    .hero-button:hover {
+      transform: translateY(-2px);
+      background: var(--clay);
+    }
+
+    .card-panel {
+      margin-top: 40px;
+      padding: 32px;
+      background: rgba(255, 255, 255, .95);
+      border: 1px solid rgba(196, 168, 130, .4);
+      border-radius: 28px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, .05);
+      display: grid;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .card-panel.hidden {
+      display: none;
+    }
+
+    .card-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      color: var(--deep);
+      margin-bottom: 12px;
+    }
+
+    .card-image {
+      width: min(100%, 380px);
+      border-radius: 24px;
+      overflow: hidden;
+      margin: 0 auto;
+      border: 1px solid rgba(156, 168, 160, .3);
+      box-shadow: 0 18px 45px rgba(0, 0, 0, .12);
+    }
+
+    .card-image img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      height: 100%;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--deep);
+      opacity: .82;
+      min-height: 68px;
+    }
+
+    .card-question {
+      margin-top: 16px;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--deep);
+      font-weight: 500;
+      letter-spacing: .01em;
+    }
+
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--deep);
+      border: 1px solid var(--clay);
+    }
+
+    .btn-secondary:hover {
+      background: var(--sand);
+    }
+
+    .btn-tertiary {
+      background: var(--clay);
+      color: var(--cream);
+    }
+
+    .btn-tertiary:hover {
+      background: var(--earth);
+      color: #fff;
+    }
+
+    .small-note {
+      margin-top: 18px;
+      font-size: .82rem;
+      color: var(--earth);
+      opacity: .74;
+    }
+
+    .footer-links {
+      margin-top: 42px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: .85rem;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      color: var(--deep);
+      opacity: .78;
+    }
+
+    .footer-links a:hover {
+      opacity: 1;
+    }
+
+    @media (max-width: 840px) {
+      body {
+        padding: 32px 20px;
+      }
+
+      .page {
+        padding: 0;
+      }
+
+      .hero-button,
+      .action-button {
+        width: 100%;
+      }
+
+      .button-group {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 24px 14px;
+      }
+
+      .card-panel {
+        padding: 22px;
+      }
+
+      .card-image {
+        width: 100%;
+      }
+
+      .card-question,
+      .card-text,
+      .lead {
+        font-size: .95rem;
+      }
+
+      .button-group {
+        gap: 12px;
+      }
+
+      .footer-links {
+        gap: 12px;
+        font-size: .82rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <span class="eyebrow">Petals.digital · Спробувати карту</span>
+    <h1>Мінімальний досвід карти</h1>
+    <p class="lead">Спробуй одну карту — і подивись, що вона відкриє саме зараз. Це маленький досвід, який часто говорить більше, ніж пояснення.</p>
+
+    <button class="hero-button" id="drawButton" type="button">Витягнути карту</button>
+
+    <div class="card-panel hidden" id="cardPanel">
+      <div>
+        <p class="eyebrow">Випала карта</p>
+        <h2 class="card-title" id="cardName">Назва карти</h2>
+      </div>
+
+      <div class="card-image">
+        <img id="cardImage" src="" alt="Карта Пелюстки тебе">
+      </div>
+
+      <p class="card-text" id="cardText">Короткий опис карти.</p>
+      <p class="card-question" id="cardQuestion">Запитання для тебе.</p>
+
+      <div class="button-group">
+        <a class="action-button btn-secondary" id="telegramLink" href="https://t.me/petalsdigital?text=Привіт%2C%20я%20спробувала%20карту%20і%20хочу%20дізнатись%20більше" target="_blank">Хочу глибше</a>
+        <a class="action-button btn-tertiary" href="https://petalsdigital.my.canva.site/proficard" target="_blank">Отримати повну колоду</a>
+        <button class="action-button btn-secondary" id="anotherButton" type="button">Спробувати іншу карту</button>
+      </div>
+
+      <p class="small-note">Це демонстраційна карта. Після кожного кліку ти отримуєш інший образ.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="petals_landing 8.html">Повернутись на головну</a>
+      <a href="index.html">Головна сторінка</a>
+    </div>
+  </div>
+
+  <script>
+    const cards = [
+      {
+        name: 'Коли опора стала тимчасовою',
+        image: 'cards1.png',
+        text: 'Образ, який показує момент, коли звичні опори більше не тримають. Це не кінець — це сигнал подивитися, де ще можна знайти підтримку.',
+        question: 'Де ти вже можеш знайти нову опору зараз?'
+      },
+      {
+        name: 'Відпустити опір',
+        image: 'cards2.png',
+        text: 'Карта про те, що напруга тримає нас у старих історіях. Вона запрошує відчути, що може змінитися, якщо дати собі трохи більше м’якості.',
+        question: 'Що ти можеш дозволити собі відпустити сьогодні?'
+      },
+      {
+        name: 'Захист',
+        image: 'cards3.png',
+        text: 'Це не просто бар’єр. Це знак того, що зараз важливо шанувати свою межу і дбати про безпеку власного простору.',
+        question: 'Яка межа для мене справді важлива зараз?'
+      },
+      {
+        name: 'Дякую собі, що залишилась',
+        image: 'cards4.png',
+        text: 'Карта-комплімент для тих, хто не відмовився від себе в складні моменти. Вона нагадує: ти тут, і це вже величезний крок.',
+        question: 'За що ти можеш сьогодні подякувати собі?'
+      },
+      {
+        name: 'Я вже інша',
+        image: 'cards5.png',
+        text: 'Образ змін, який говорить: ти не та сама людина, що була раніше. Це запрошення помітити свій розвиток і прийняти нову версію себе.',
+        question: 'Що в тобі змінилося і що хочеш з цим зробити?'
+      },
+      {
+        name: 'Тобі не потрібно зараз нічого доводити',
+        image: 'cards.png',
+        text: 'Ця карта нагадує, що твоє визнання не має бути заробленим, а твоя цілість — не залежить від чужих очікувань.',
+        question: 'Які частини тебе вже приймають цю свободу?'
+      }
+    ];
+
+    const cardPanel = document.getElementById('cardPanel');
+    const drawButton = document.getElementById('drawButton');
+    const anotherButton = document.getElementById('anotherButton');
+    const cardName = document.getElementById('cardName');
+    const cardImage = document.getElementById('cardImage');
+    const cardText = document.getElementById('cardText');
+    const cardQuestion = document.getElementById('cardQuestion');
+
+    function showCard(card) {
+      cardName.textContent = card.name;
+      cardImage.src = card.image;
+      cardImage.alt = card.name;
+      cardText.textContent = card.text;
+      cardQuestion.textContent = card.question;
+      cardPanel.classList.remove('hidden');
+    }
+
+    function drawCard() {
+      const randomIndex = Math.floor(Math.random() * cards.length);
+      showCard(cards[randomIndex]);
+    }
+
+    drawButton.addEventListener('click', drawCard);
+    anotherButton.addEventListener('click', drawCard);
+  </script>
+</body>
+</html>

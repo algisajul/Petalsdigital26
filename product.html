@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вітрина продуктів — Petals.digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #F5F0E8;
+      --warm: #FAF8F4;
+      --sand: #E8DFD0;
+      --clay: #B8956E;
+      --earth: #9CA8A0;
+      --deep: #2C2218;
+      --mist: #CFC6B8;
+      --ink: #1A1410;
+      --accent: #B86F52;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: linear-gradient(180deg, var(--warm) 0%, var(--cream) 100%);
+      color: var(--ink);
+      min-height: 100vh;
+    }
+
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 36px 32px 64px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 42px;
+    }
+
+    .logo {
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--earth);
+      font-size: 1.05rem;
+      letter-spacing: .16em;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--deep);
+      font-size: .86rem;
+      letter-spacing: .08em;
+      opacity: .84;
+      transition: opacity .2s;
+    }
+
+    .nav-links a:hover {
+      opacity: 1;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 28px;
+      overflow: hidden;
+      border: 1px solid rgba(196, 168, 130, .3);
+      display: flex;
+      flex-direction: column;
+      min-height: 580px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, .06);
+    }
+
+    .product-card img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      height: 260px;
+    }
+
+    .product-card-content {
+      padding: 26px;
+      display: grid;
+      gap: 16px;
+      flex: 1;
+    }
+
+    .product-description {
+      color: var(--earth);
+      line-height: 1.8;
+      font-size: .95rem;
+      flex: 1;
+      min-height: 90px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 24px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: .92rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      transition: transform .2s ease, background .2s ease;
+    }
+
+    .btn-primary {
+      background: var(--deep);
+      color: #fff;
+      box-shadow: 0 16px 34px rgba(44, 34, 24, .16);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      background: var(--clay);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--deep);
+      border: 1px solid var(--clay);
+    }
+
+    .showcase-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 24px;
+      margin-bottom: 50px;
+    }
+
+    .product-tag {
+      display: inline-block;
+      color: var(--clay);
+      font-size: .7rem;
+      text-transform: uppercase;
+      letter-spacing: .18em;
+    }
+
+    .product-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      color: var(--deep);
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .product-description {
+      color: var(--earth);
+      line-height: 1.8;
+      font-size: .95rem;
+      flex: 1;
+    }
+
+    .product-meta {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      color: var(--earth);
+    }
+
+    .product-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .product-footer a {
+      text-decoration: none;
+      color: var(--deep);
+      font-size: .86rem;
+      letter-spacing: .08em;
+    }
+
+    .product-footer a:hover {
+      color: var(--accent);
+    }
+
+    .product-highlight {
+      background: var(--deep);
+      color: var(--cream);
+      padding: 18px 24px;
+      border-radius: 24px;
+      margin-bottom: 40px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .highlight-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      color: #fff;
+      line-height: 1.15;
+    }
+
+    .highlight-text {
+      color: rgba(255, 255, 255, .8);
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+
+    .bottom-cta {
+      background: var(--sand);
+      border-radius: 28px;
+      padding: 34px 28px;
+      display: grid;
+      gap: 22px;
+      text-align: center;
+    }
+
+    .bottom-cta h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      color: var(--deep);
+      line-height: 1.1;
+    }
+
+    .bottom-cta p {
+      color: var(--earth);
+      line-height: 1.8;
+    }
+
+    .bottom-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+    }
+
+    @media (max-width: 960px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        width: 100%;
+        justify-content: flex-start;
+      }
+
+      .showcase-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        padding: 24px 18px 40px;
+      }
+
+      nav {
+        align-items: center;
+      }
+
+      .nav-links {
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .product-card {
+        min-height: auto;
+      }
+
+      .product-card img {
+        height: 220px;
+      }
+
+      .product-card-content {
+        padding: 22px;
+      }
+
+      .product-name {
+        font-size: 1.35rem;
+      }
+
+      .product-description {
+        min-height: 0;
+      }
+
+      .product-meta {
+        font-size: 1.2rem;
+      }
+
+      .product-footer {
+        gap: 10px;
+      }
+
+      .bottom-cta {
+        padding: 28px 22px;
+      }
+
+      .bottom-cta h2 {
+        font-size: clamp(1.8rem, 4vw, 2.2rem);
+      }
+
+      .bottom-buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <nav>
+      <a href="petals_landing 8.html" class="logo">Petals.digital</a>
+      <div class="nav-links">
+        <a href="petals_landing 8.html#products">Повернутись</a>
+        <a href="try-card.html">Спробувати карту</a>
+        <a href="petals_landing 8.html">На головну</a>
+      </div>
+    </nav>
+
+    <section id="products" class="showcase-grid">
+      <article class="product-card">
+        <img src="showcase-book-cover.png" alt="Книга Пелюстки тебе">
+        <div class="product-card-content">
+          <span class="product-tag">Електронна книга</span>
+          <h2 class="product-name">Книга «Пелюстки тебе»</h2>
+          <p class="product-description">Коли всередині шумно — складно зрозуміти, що насправді відбувається. Ця книга допомагає зупинитись і побачити свій стан через образ, запитання і тишу.</p>
+          <div class="product-footer">
+            <span class="product-meta">500 грн</span>
+            <a href="https://bank.gov.ua/qr/QkNECjAwMgoxClVDVAoK0K_QstGC0YPRiNC10L3QutC-INCu0LvRltGPINCS0LDQu9C10YDRltGX0LLQvdCwLCDQpNCe0J8gICAgICAgICAKVUEzNDMyMjAwMTAwMDAwMjYwMDEzNjAwMTc5NTMKVUFIMTIwMAoyOTg5NzEyOTQwCgoK0JzQsNC6INC60LDRgNGC0LgKCg" target="_blank">Обрати</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img src="showcase-cards.png" alt="МАК карти Пелюстки тебе">
+        <div class="product-card-content">
+          <span class="product-tag">Колода</span>
+          <h2 class="product-name">Метафоричні карти</h2>
+          <p class="product-description">31 карта станів з образами для самостійної роботи або в терапевтичній практиці.</p>
+          <div class="product-footer">
+            <span class="product-meta">1200 грн</span>
+            <a href="try-card.html">Переглянути</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img src="showcase-workbook.png" alt="Воркбук Пелюстки тебе">
+        <div class="product-card-content">
+          <span class="product-tag">Воркбук</span>
+          <h2 class="product-name">Практичний workbook</h2>
+          <p class="product-description">Це список запитань, з якими ти працюєш самостійно. Тобі не потрібен спеціальний формат — достатньо будь-якого блокнота і ручки. Ти просто читаєш запитання і записуєш свої відповіді так, як відчувається. Якщо в процесі з'являється бажання піти глибше — ти можеш звернутись із цими відповідями до спеціаліста або продовжити роботу разом зі мною.</p>
+          <div class="product-footer">
+            <span class="product-meta">200 грн</span>
+            <a href="https://petalsdigital.my.canva.site/proficard" target="_blank">Обрати</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img src="showcase-guide.png" alt="Відпустити опір">
+        <div class="product-card-content">
+          <span class="product-tag">Гайд</span>
+          <h2 class="product-name">Безкоштовний гайд</h2>
+          <p class="product-description">Невеликий вступ у формат роботи зі своїм станом. Допомагає зупинитись, трохи заспокоїтись і краще відчути себе через прості практики.</p>
+          <div class="product-footer">
+            <span class="product-meta">Безкоштовно</span>
+            <a href="https://drive.google.com/file/d/10N6YjlAu6W9v4DsGuDxkfOjiG-CEAM90/view?usp=sharing" target="_blank">Завантажити</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img src="showcase-demo.png" alt="Я вже інша">
+        <div class="product-card-content">
+          <span class="product-tag">Демо</span>
+          <h2 class="product-name">Міні-досвід карти</h2>
+          <p class="product-description">Спробуй одну карту — і подивись, що вона відкриє саме зараз. Це маленький досвід, який часто говорить більше, ніж пояснення.</p>
+          <div class="product-footer">
+            <span class="product-meta">Демо</span>
+            <a href="try-card.html">Спробувати</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img src="showcase-session.png" alt="Записатись на сесію">
+        <div class="product-card-content">
+          <span class="product-tag">Сесія</span>
+          <h2 class="product-name">Записатись на сесію</h2>
+          <p class="product-description">Якщо складно розібратись самостійно — можна зробити це разом. М’який діалог + карти допоможуть побачити те, що поки не видно.</p>
+          <div class="product-footer">
+            <span class="product-meta">за запитом</span>
+            <a href="https://t.me/petalsdigital" target="_blank">Записатись</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="bottom-cta">
+      <h2>Потрібно більше форматів?</h2>
+      <p>Сторінка вітрини знайомить з продуктом. Далі можна переміститися в демо або замовити повний формат прямо зараз.</p>
+      <div class="bottom-buttons">
+        <a href="try-card.html" class="btn btn-primary">Спробувати карту</a>
+        <a href="https://petalsdigital.my.canva.site/proficard" target="_blank" class="btn btn-secondary">Отримати продукт</a>
+        <a href="https://t.me/petalsdigital" target="_blank" class="btn btn-secondary">Записатись на сесію</a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
