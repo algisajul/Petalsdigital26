@@ -220,6 +220,7 @@ h1.hero-t{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,3.8vw,3.
 .sc{aspect-ratio:3/4;position:relative;overflow:hidden;cursor:pointer;transition:transform .4s}
 .sc:hover{transform:translateY(-8px) scale(1.02)}
 .sc img{width:100%;height:100%;object-fit:cover}
+.mobile-only-card{display:none}
 .scov{position:absolute;inset:0;background:linear-gradient(to top,rgba(28,18,10,.7) 0%,transparent 50%);display:flex;align-items:flex-end;padding:1.1rem}
 .scname{font-family:'Cormorant Garamond',serif;font-size:.75rem;color:rgba(250,248,244,.85);line-height:1.4;font-style:italic}
 
@@ -316,6 +317,7 @@ footer{background:var(--deep);padding:2.5rem 5rem;display:flex;flex-direction:co
   .agrid,.hgrid,.pgrid,.lgrid,.wgr3{grid-template-columns:1fr}
   .pcard.feat{grid-column:auto}
   .cshowcase{grid-template-columns:repeat(2,1fr)}
+  .mobile-only-card{display:block}
   .cta-fin::before{font-size:28vw}
   .sticky{bottom:1rem;right:1rem;padding:.85rem 1.4rem}
 }
@@ -330,7 +332,7 @@ footer{background:var(--deep);padding:2.5rem 5rem;display:flex;flex-direction:co
     <li><a href="#products">Продукти</a></li>
     <li><a href="#author">Автор</a></li>
     <li><a href="#library">Бібліотека</a></li>
-    <li><a href="#footer" aria-label="Контакт - посилання на футер з Telegram та Instagram">Контакт</a></li>
+    <li><a href="#contact" aria-label="Контакт - секція з кнопкою для питання">Контакт</a></li>
   </ul>
  <a href="product.html" class="btn btn-p">Обрати інструмент для себе</a>
 </nav>
@@ -451,6 +453,7 @@ footer{background:var(--deep);padding:2.5rem 5rem;display:flex;flex-direction:co
     <div class="sc rev"><img src="cards3.png" alt="МАК карти для роботи з емоціями" loading="lazy" style="object-position:50% 50%"><div class="scov"><span class="scname">Захист</span></div></div>
     <div class="sc rev"><img src="cards4.png" alt="МАК карти для психолога" loading="lazy" style="object-position:0% 100%"><div class="scov"><span class="scname">Дякую собі, що залишилась</span></div></div>
     <div class="sc rev"><img src="cards5.png" alt="Метафоричні карти психологічні" loading="lazy" style="object-position:100% 100%"><div class="scov"><span class="scname">Я вже інша</span></div></div>
+    <div class="sc rev mobile-only-card"><img src="tam_de_bezpechno_mobile.webp" alt="МАК карта Там, де безпечно" loading="lazy"><div class="scov"><span class="scname">Там, де безпечно</span></div></div>
   </div>
 </section>
 
@@ -584,7 +587,7 @@ footer{background:var(--deep);padding:2.5rem 5rem;display:flex;flex-direction:co
        <a href="demo.html" class="btn btn-p">Спробувати за 5 хвилин</a>
        <span class="micro">Демо доступне одразу</span>
       </div>
-   <a href="https://t.me/aiartpetals" target="_blank" class="btn btn-g">Задати питання</a>
+   <a href="https://t.me/aiartpetals" target="_blank" rel="noopener" class="btn btn-g">Задати питання</a>
     </div>
   </div>
 </section>
